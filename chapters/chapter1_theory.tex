@@ -1,3 +1,81 @@
 The Standard Model of Particle Physics (SM) is the description of the physics of elementary particles and their interaction, which is known up now. The theoretical foundation is the perturbative quantum field theory (QFT) which is harmonised with Special Relativity. In the formaslim of QFT classical fields are quantized and the information of the interaction of the particles is encoded in the lorentz-invariant lagrangian density $\mathcal{L}$. 
 
-\section{Kappa}
+\section{Particles and interactions}
+\label{section_1_1}
+
+In the SM elemental particles can be characzerized by their spin, which is a quantum number describing a analogon to the intrinsic angular momentum. Fermions carry spin $\frac{1}{2}$ and are represented by Dirac spinors $\psi$, which are complex 4-component objects defined through their behaviour under Lorentz transformation: $\psi^{\alpha}(x) \rightarrow S[\Lambda]^{\alpha}_{\beta} \psi^{\beta}(\Lambda^{-1}x)$. The interaction between the fermions are described by gauge symmetries, which are local symmetry transformations, leaving the langrangian invariant with the introduction of a gauge boson. Gauge boson are elemental particles with spin 1. All relevant symmetries and the corresponding interaction are described in the following, the list of all elemental particle and their properties are listed in table \ref{tab:1.1}.
+
+\subsection*{\small U(1)${_e}$ symmetry and quantum electrodynamics (QED)}
+
+The free langrangian of a fermion using the Dirac spinors, using $\gamma^{\mu}$ as the gamma matrizes and $\bar{\psi} = \psi^{\dagger}\gamma^{0}$, can be written as:
+
+\begin{equation}
+	\mathcal{L}_{0} =  i\bar{\psi}(x)\gamma^{\mu}\partial_{\mu}\psi(x) - m\bar{\psi}(x)\psi(x)
+\end{equation}
+
+Performing a global transformation of the the kind $\psi(x) \rightarrow \psi'(x) = e^{iQ\alpha}\psi(x)$, with Q and $\alpha$ as real constants, the langrangian stays invariant under this so called U(1) transformation. The invariance is not fullfilled if $\alpha$ depends explictly on the spacetime $x$ and is called a local gauge transformation. To insure invariance under a gauge transformation, a new 4-component lorentz vector field $A_{\mu}(x)$ is introduced with following property under U(1) transformation: $A_{\mu} \rightarrow A'_{\mu}(x) = A_{\mu}(x) + \frac{1}{e}\partial_{\mu}\alpha(x)$. Using the definition of the covariant derivate $D_{\mu} = \partial_{\mu} - ieQA_{\mu}(x)$, the following langrangian stays invariant under local U(1) transformation:
+
+\begin{equation}
+	\mathcal{L} = i\bar{\psi}(x)\gamma^{\mu}D_{\mu}\psi(x) - m\bar{\psi}(x)\psi(x) = \mathcal{L}_{0} + eQA_{\mu}(x)\bar{\psi}(x)\gamma^{\mu}\psi(x)
+\end{equation}
+
+With the gauge transformation the gauge boson of the electromagnetic interaction is introduced, which couples to the fermions with electric charge e: the photon $\gamma$.
+
+
+\subsection*{\small SU(3)${_C}$ symmetry and quantum chromodynamics (QCD)}
+
+Beside the electric charge, the so-called quarks are fermions carrying the one of three possible color charges (denoted with r,b,g). Labeling the quark spinor with color $c$ as $q^{c} = \psi_{q}(c)$ and putting them all into a three vector with quark $q_{f} = (q^{b}, q^{r}, q^{g})$, the free lagrangian of quarks can be written as
+
+\begin{equation}
+	\mathcal{L}_{0} = \sum_{f} \bar{q_{f}}(i\gamma^{\mu}\partial_{\mu} - m_{f})q_{f}
+\end{equation}
+
+The index $f$ denotes the flavour of the quark is explained below. Like in the QED example a local gauge theory exists, which introduces gauge bosons. A transformation of the kind $q_{f} \rightarrow q'_{f} = e^{i\frac{\lambda^{a}}{2}\alpha_{a}(x)} q_{f}$, with $\frac{1}{2} \lambda^{a}$ as non communting 3x3 matrixes and $a \in (1, 2, .., 8)$, is a local SU(3)$_{C}$ transformation. To get a lagrangian invariant under this tranformation, 8 new gauge bosons $G^{\mu}_{a}(x)$, so-called gluons have to be introduced, corresponding to the number of generators $\lambda^{a}$ to represent the SU(3)$_{C}$ algebra. Defining the covariant derivative $D_{\mu} = \partial_{\mu}-ig_{s}\frac{\lambda^{a}}{2}G^{\mu}_{a}(x)$ and demand the gluons to transform using $U = e^{i\frac{\lambda^{a}}{2}\alpha_{a}(x)}$ like $G^{\mu}_{a}(x) \rightarrow G^{\mu}(x)' = UG^{\mu}U^{\dagger} - \frac{i}{g_s}(\partial^{\mu}U)U^{\dagger}$ the invariant lagrangian of QCD can be written like 
+
+\begin{equation}
+	\mathcal{L} = \sum_{f} \bar{q_{f}}(i\gamma^{\mu}D_{\mu} - m_{f})q_{f}
+\end{equation}
+
+
+\subsection*{\small SU(2)$_{W}$ x U(1)$_{Y}$, the electroweak interaction and Higgs mechanism}
+
+The flavour of fermions is a quantum number describing of the type particle. For the quarks six different flavours (up, down, charm, strange, top, bottom) exist, for the color-less leptons/neutrinos fermions the three lepton flavour (electron, muon, tau) exist. Also a important quantity is the chirality, because in the electroweak theory not all chirality configuration of the fermions couples to the gauge bosons. We define the spinors of fermions with lefthanded(L) or righthanded(R) chirality with $\psi_{L/R} = \frac{1}{2}(1\mp \gamma^{5})\psi$ and for simplizity looking only at the first generation of quarks/leptons, the spinor of quarks/leptons are defined as $u = \psi_{u}, d = \psi_{d}, e = \psi_{e}, \nu = \psi_{\nu_{e}}$. If the fermions are assembled as $q_{L} = (u_{L}, d_{L}), u_{R}, d_{R}, l_{L} = (e_{L}, \nu_{L}), e_{R}$ and consindering them to be massless, the free langrangian of the electroweak theory is
+
+
+\begin{equation}
+	\mathcal{L}_{0} = i\bar{q}_{L}\gamma^{\mu}\partial_{\mu}q_{L} + i\bar{l}_{L}\gamma^{\mu}\partial_{\mu}l_{L} + \sum_{f \in (e, u, d)} i\bar{f}_{R}\gamma^{\mu}\partial_{\mu}f_{R}
+\end{equation}
+
+The local SU(2)$_{W}$ x U(1)$_{Y}$ gauge transformation, which is a tranformation of the kind
+
+
+\begin{equation}
+	\begin{split}
+		q_{L} \rightarrow q'_{L} = e^{iQ_{q} \alpha_{Y}(x)} e^{i\frac{\sigma_{j}}{2}\alpha^{j}_{W}(x)}q_{L} \\
+		l_{L} \rightarrow l'_{L} = e^{iQ_{l} \alpha_{Y}(x)} e^{i\frac{\sigma_{j}}{2}\alpha^{j}_{W}(x)}l_{L} \\
+		f_{R} \rightarrow f'_{R} = e^{iQ_{f} \alpha_{Y}(x)}, \quad f \in (e, u, d)
+	\end{split}			
+\end{equation}
+
+
+with $\sigma_{j}, j \in (1,2,3)$ as the Pauli matrices, $Q$ as real constant and $a_{Y}, a^{j}_{W}$ as real function of spacetime, introduces 4 gauge bosons, the three $W^{j}_{\mu}(x)$, origating from SU(2)$_{W}$, and the $B_{\mu}$ from U(1)$_{Y}$. Using $U_{L} = e^{i\frac{\sigma_{j}}{2}\alpha^{j}_{W}(x)}$, demanding the transformation properties $B_{\mu} \rightarrow B'_{\mu} = B_{\mu} + \frac{1}{g'}$, $W'_{\mu} \rightarrow U_{L}\frac{\sigma_{j}}{2}W_{\mu}^{j}U_{L}^{\dagger} - \frac{i}{g}(\partial_{\mu}U_{L})U_{L}^{\dagger}$ and defining the covariante derivate 
+
+\begin{equation}
+	\begin{split}
+		D^{q}_{\mu} = \partial_{\mu}  - ig\frac{\sigma_{j}}{2}W^{j}_{\mu} - ig'Q_{q}B_{\mu} \\
+		D^{l}_{\mu} = \partial_{\mu}  - ig\frac{\sigma_{j}}{2}W^{j}_{\mu} - ig'Q_{l}B_{\mu} \\
+		D^{f_R}_{\mu} = \partial_{\mu}  - ig'Q_{f}B_{\mu}, \quad f \in (e, u, d)
+	\end{split}
+\end{equation}
+
+the gauge invariant lagrangian of the electroweak can be written as 
+
+\begin{equation}
+	\mathcal{L} = i\bar{q}_{L}\gamma^{\mu}D_{\mu}^{q}q_{L} + i\bar{l}_{L}\gamma^{\mu}D_{\mu}^{l}l_{L} + \sum_{f \in (e, u, d)} i\bar{f}_{R}\gamma^{\mu}D^{f_R}_{\mu}f_{R}
+\end{equation}
+
+The problem from this formulation arises from the fact, that the gauge bosons and fermions are measured to have a mass. To explain this discrepancy the Higgs mechanism is introduced. Considering a complex scalar field doublet $\Phi(x) = (\phi^{1}(x), \phi^{2}(x))$, which transform under SU(2)$_{W}$ like $\Phi(x) \rightarrow \Phi'(x) = e^{iQ_{\Phi} \alpha_{Y}(x)} e^{i\frac{\sigma_{j}}{2}\alpha^{j}_{W}(x)}\Phi(x)$ the lagrangian can be written as
+
+\begin{equation}
+	\mathcal{L}_{H} = i\bar{q}_{L}\gamma^{\mu}D_{\mu}^{q}q_{L} + i\bar{l}_{L}\gamma^{\mu}D_{\mu}^{l}l_{L} + \sum_{f \in (e, u, d)} i\bar{f}_{R}\gamma^{\mu}D^{f_R}_{\mu}f_{R}
+\end{equation}
