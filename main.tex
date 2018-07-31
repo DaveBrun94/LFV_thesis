@@ -1,31 +1,69 @@
-\documentclass[12pt,twoside]{report}
+\documentclass[12pt,twoside]{book}
+
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
 \usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{acronym}
 \usepackage{graphicx}
-\usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{url}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor= [RGB]{8 0 125},
+    citecolor= [RGB]{8 0 125},
+    urlcolor= [RGB]{8 0 125}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+\fancyhead[LO, RE]{\thesection~ \rightmark}
+\fancyhead[RO,LE]{Chapter \thechapter}
+\fancyfoot[C]{\thepage}
 
 
 \begin{document}
 
 \input{chapters/titlepage.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
 %\chapter*{Abstract}
 %\input{chapters/abstract.tex}
 
 \tableofcontents
+\thispagestyle{empty}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\listoffigures
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{List of figures}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\listoftables
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{List of tables}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
 \chapter{Theoretical basics about the Standard Model and lepton flavour violation}
 \input{chapters/chapter1_theory.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
-%\chapter{Experimental set up}
-%\input{chapters/chapter2_CMS.tex}
+\chapter{Experimental set up}
+\input{chapters/chapter2_CMS.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
+\appendix
+
+\chapter*{Acronyms}
+\addcontentsline{toc}{chapter}{Acronyms}
+\input{chapters/acronyms.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
 \bibliographystyle{packages/bibstyle.bst}
-\bibliography{bibliography.bib} 
+\bibliography{bibliography.bib}
+\addcontentsline{toc}{chapter}{Bibliography}
 
 \end{document}
