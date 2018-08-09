@@ -1,23 +1,23 @@
-The Standard Model of Particle Physics (\acs{SM}) \cite{SM} is the description of the physics of elementary particles and their interaction, which is known up now. The theoretical foundation is the perturbative quantum field theory (\acs{QFT}) which is harmonised with Special Relativity. In the formaslim of \acs{QFT} classical fields are quantized and the information of the interaction of the particles is encoded in the lorentz-invariant lagrangian density $\mathcal{L}$. 
+The Standard Model of Particle Physics (\gls{SM}) \cite{SM} is the description of the physics of elementary particles and their interaction, which is known up now. The theoretical foundation is the perturbative quantum field theory (\gls{QFT}) which is harmonised with Special Relativity. In the formaslim of \gls{QFT} classical fields are quantized and the information of the interaction of the particles is encoded in the lorentz-invariant lagrangian density $\mathcal{L}$. 
 
 
 
 \section{Particles and interactions}
 \label{sec:section_1_1}
 
-In the \acs{SM} elementary particles can be characzerized by their spin \cite{SPIN}, which is a quantum number describing a analogon to the intrinsic angular momentum. Fermions carry spin $\frac{1}{2}$ and are represented by Dirac spinors $\psi$, which are complex 4-component objects defined through their behaviour under Lorentz transformation: $\psi^{\alpha}(x) \rightarrow S[\Lambda]^{\alpha}_{\beta} \psi^{\beta}(\Lambda^{-1}x)$ \cite{spinor}. The interaction between the fermions are described by gauge symmetries, which are local symmetry transformations, leaving the langrangian invariant with the introduction of a gauge boson. Gauge boson are elementary particles with spin 1. All relevant symmetries and the corresponding interaction are described in the following, the schematic overview of all elementary particle and their properties are shown in figure \ref{fig:fig_1_1}.
+In the \gls{SM} elementary particles can be characzerized by their spin \cite{SPIN}, which is a quantum number describing a analogon to the intrinsic angular momentum. Fermions carry spin $\frac{1}{2}$ and are represented by Dirac spinors $\psi$, which are complex 4-component objects defined through their behaviour under Lorentz transformation: $\psi^{\alpha}(x) \rightarrow S[\Lambda]^{\alpha}_{\beta} \psi^{\beta}(\Lambda^{-1}x)$ \cite{spinor}. The interaction between the fermions are described by gauge symmetries, which are local symmetry transformations, leaving the langrangian invariant with the introduction of a gauge boson. Gauge boson are elementary particles with spin 1. All relevant symmetries and the corresponding interaction are described in the following, the schematic overview of all elementary particle and their properties are shown in figure \ref{fig:fig_1_1}.
 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\textwidth]{pictures/Standard_Model_of_Elementary_Particles.pdf}
 
-	\caption[Schematic overwiev of Standard Model particles]{Schematic overwiev of all known elementary particles of the \acs{SM} with their measured properties, taken from \cite{SMPARTICLES}}
+	\caption[Schematic overwiev of Standard Model particles]{Schematic overwiev of all known elementary particles of the \gls{SM} with their measured properties, taken from \cite{SMPARTICLES}}
 	\label{fig:fig_1_1}
 \end{figure}
 
 
-\subsection{U(1)${_e}$ symmetry and quantum electrodynamics (\acs{QED})}
+\subsection{U(1)${_e}$ symmetry and quantum electrodynamics (\gls{QED})}
 \label{sec:section_1_1_1}
 
 The free langrangian of a fermion using the Dirac spinors, using $\gamma^{\mu}$ as the gamma matrizes and $\bar{\psi} = \psi^{\dagger}\gamma^{0}$, can be written as:
@@ -37,7 +37,7 @@ Performing a global transformation of the the kind $\psi(x) \rightarrow \psi'(x)
 With the gauge transformation the gauge boson of the electromagnetic interaction is introduced, which couples to the fermions with electric charge e: the photon $\gamma$.
 
 
-\subsection{SU(3)${_C}$ symmetry and quantum chromodynamics (\acs{QCD})}
+\subsection{SU(3)${_C}$ symmetry and quantum chromodynamics (\gls{QCD})}
 \label{sec:section_1_1_2}
 
 Beside the electric charge, the so-called quarks are fermions carrying the one of three possible color charges (denoted with r,b,g). Labeling the quark spinor with color $c$ as $q^{c} = \psi_{q}(c)$ and putting them all into a three vector with quark $q_{f} = (q^{b}, q^{r}, q^{g})$, the free lagrangian of quarks can be written as
@@ -47,7 +47,7 @@ Beside the electric charge, the so-called quarks are fermions carrying the one o
 	\mathcal{L}_{0} = \sum_{f} \bar{q_{f}}(i\gamma^{\mu}\partial_{\mu} - m_{f})q_{f}
 \end{equation}
 
-The index $f$ denotes the flavour of the quark is explained below. Like in the \acs{QED} example a local gauge theory exists, which introduces gauge bosons. A transformation of the kind $q_{f} \rightarrow q'_{f} = e^{i\frac{\lambda^{a}}{2}\alpha_{a}(x)} q_{f}$, with $\frac{1}{2} \lambda^{a}$ as non communting 3x3 matrixes and $a \in (1, 2, .., 8)$, is a local SU(3)$_{C}$ transformation \cite{QCD}. To get a lagrangian invariant under this tranformation, 8 new gauge bosons $G^{\mu}_{a}(x)$, so-called gluons have to be introduced, corresponding to the number of generators $\lambda^{a}$ to represent the SU(3)$_{C}$ algebra. Defining the covariant derivative $D_{\mu} = \partial_{\mu}-ig_{s}\frac{\lambda^{a}}{2}G^{\mu}_{a}(x)$ and demand the gluons to transform using $U = e^{i\frac{\lambda^{a}}{2}\alpha_{a}(x)}$ like $G^{\mu}_{a}(x) \rightarrow G^{\mu}(x)' = UG^{\mu}U^{\dagger} - \frac{i}{g_s}(\partial^{\mu}U)U^{\dagger}$ the invariant lagrangian of \acs{QCD} can be written like 
+The index $f$ denotes the flavour of the quark is explained below. Like in the \gls{QED} example a local gauge theory exists, which introduces gauge bosons. A transformation of the kind $q_{f} \rightarrow q'_{f} = e^{i\frac{\lambda^{a}}{2}\alpha_{a}(x)} q_{f}$, with $\frac{1}{2} \lambda^{a}$ as non communting 3x3 matrixes and $a \in (1, 2, .., 8)$, is a local SU(3)$_{C}$ transformation \cite{QCD}. To get a lagrangian invariant under this tranformation, 8 new gauge bosons $G^{\mu}_{a}(x)$, so-called gluons have to be introduced, corresponding to the number of generators $\lambda^{a}$ to represent the SU(3)$_{C}$ algebra. Defining the covariant derivative $D_{\mu} = \partial_{\mu}-ig_{s}\frac{\lambda^{a}}{2}G^{\mu}_{a}(x)$ and demand the gluons to transform using $U = e^{i\frac{\lambda^{a}}{2}\alpha_{a}(x)}$ like $G^{\mu}_{a}(x) \rightarrow G^{\mu}(x)' = UG^{\mu}U^{\dagger} - \frac{i}{g_s}(\partial^{\mu}U)U^{\dagger}$ the invariant lagrangian of \gls{QCD} can be written like 
 
 \begin{equation}
 	\label{eq:eq_1_4}
@@ -113,35 +113,35 @@ with the covariant derivate $D^{\Phi}_{\mu} = \partial_{\mu}  - ig\frac{\sigma_{
 	\end{split}
 \end{equation}
 
-The $Z$ boson and the $W^{\pm}$ from the weak interaction, appeared with the introduction of the Higgs \cite{HIGGDISCOVER}, which are both massiv, like measured in nature. Also the photon $A_{\mu}$, which also come up during the \acs{QED} discussion, appeared with zero mass. 
+The $Z$ boson and the $W^{\pm}$ from the weak interaction, appeared with the introduction of the Higgs \cite{HIGGDISCOVER}, which are both massiv, like measured in nature. Also the photon $A_{\mu}$, which also come up during the \gls{QED} discussion, appeared with zero mass. 
 
 
 
 \section{Symmetries and conservation}
 \label{sec:section_1_2}
 
-Symmetries in the physical system and conservation laws are directly coupled, not only in \acs{QFT}. The central theoretical foundation is the Noether theorem \cite{NOTHERTHEOREM}. It states that a symmetry in the physical system leads to a conservation law. In terms of \acs{QFT} the Noether theorem says that if a field $\phi(x)$ exists, which langrangian $\mathcal{L}$ is invariant under the infinitesimal transformation $\phi(x) \rightarrow \phi'(x) = \phi(x) + \alpha \delta \phi(x)$, then a current $j^{\mu}$ exists, which is conversed: $\partial_{\mu}j^{\mu} = 0$.  
+Symmetries in the physical system and conservation laws are directly coupled, not only in \gls{QFT}. The central theoretical foundation is the Noether theorem \cite{NOTHERTHEOREM}. It states that a symmetry in the physical system leads to a conservation law. In terms of \gls{QFT} the Noether theorem says that if a field $\phi(x)$ exists, which langrangian $\mathcal{L}$ is invariant under the infinitesimal transformation $\phi(x) \rightarrow \phi'(x) = \phi(x) + \alpha \delta \phi(x)$, then a current $j^{\mu}$ exists, which is conversed: $\partial_{\mu}j^{\mu} = 0$.  
 
-\subsection{Example of conservation in \acs{QED}}
+\subsection{Example of conservation in \gls{QED}}
 \label{sec:section_1_2_1}
 
-In section \ref{sec:section_1_1_1} the U(1) symmetry in \acs{QED} is discussed. Without loss of generality looking at a global U(1) transformation, which means $\alpha$ is a real constant, the infinitesimal transformation of the spinor is done by $\psi(x) \rightarrow \psi'(x) = \psi(x) + \alpha \delta \psi(x)$ and  $\bar{\psi}(x) \rightarrow \bar{\psi}'(x) = \bar{\psi}(x) - \alpha \delta \bar{\psi}(x)$. The free langrangian in equation \ref{eq:eq_1_1} is invariant under this tranformation, so it exist a conserved current $j_{\text{QED}}^{\mu}$. Defining the charge $Q_{\text{QED}} = \int j^{0}_{\text{QED}} d^{3}x$, equation \ref{eq:eq_1_11} shows a conserved charge. 
+In section \ref{sec:section_1_1_1} the U(1) symmetry in \gls{QED} is discussed. Without loss of generality looking at a global U(1) transformation, which means $\alpha$ is a real constant, the infinitesimal transformation of the spinor is done by $\psi(x) \rightarrow \psi'(x) = \psi(x) + \alpha \delta \psi(x)$ and  $\bar{\psi}(x) \rightarrow \bar{\psi}'(x) = \bar{\psi}(x) - \alpha \delta \bar{\psi}(x)$. The free langrangian in equation \ref{eq:eq_1_1} is invariant under this tranformation, so it exist a conserved current $j_{\text{QED}}^{\mu}$. Defining the charge $Q_{\text{QED}} = \int j^{0}_{\text{QED}} d^{3}x$, equation \ref{eq:eq_1_11} shows a conserved charge. 
 
 \begin{equation}
 	\label{eq:eq_1_11}
 	\frac{d}{dt} Q_{\text{QED}} = \int \frac{d}{dt}j^{0}_{\text{QED}}d^{3}x \overset{\partial_{\mu}j_{\text{QED}}^{\mu} = 0}{=} \int \vec{\nabla} \vec{j}_{\text{QED}}d^{3}x \overset{\text{Boundary conditions}}{=} 0
 \end{equation}
 
-In the example of the \acs{QED} the conserved charge is the electric charge of the fermion.
+In the example of the \gls{QED} the conserved charge is the electric charge of the fermion.
 
-\subsection{Conversation laws in the \acs{SM}}
+\subsection{Conversation laws in the \gls{SM}}
 \label{sec:section_1_2_2}
 
-In the \acs{SM} different type of symmetries give rise to conversation laws. The first type are the gauge symmetries, which lead to the consevation of the charge of the corresponding interaction. The second type are continous Lorentz transformation, including translation/rotation symmetries, and the third type are discrete transformations, including space/time inversion and charge conjugation \cite{Peskin}. All conservation quantities and the corresponding symmetry are listed in table \ref{tab:tab_1_1}.
+In the \gls{SM} different type of symmetries give rise to conversation laws. The first type are the gauge symmetries, which lead to the consevation of the charge of the corresponding interaction. The second type are continous Lorentz transformation, including translation/rotation symmetries, and the third type are discrete transformations, including space/time inversion and charge conjugation \cite{Peskin}. All conservation quantities and the corresponding symmetry are listed in table \ref{tab:tab_1_1}.
 
 \begin{table}[h]
 	\centering
-	\caption[Symmetries in the Standard Model]{Symmetries and the corresponding conserved quantities in the \acs{SM}. The second column shows the transformation property of a generic quantum field $\phi(x)$, which langrangian have to stay invariant to fullfill Nothers theorem}
+	\caption[Symmetries in the Standard Model]{Symmetries and the corresponding conserved quantities in the \gls{SM}. The second column shows the transformation property of a generic quantum field $\phi(x)$, which langrangian have to stay invariant to fullfill Nothers theorem}
 	\label{tab:tab_1_1}
 
 	\begin{tabular}{l|l|l}
@@ -168,12 +168,12 @@ In the \acs{SM} different type of symmetries give rise to conversation laws. The
 \section{Lepton flavour violation}
 \label{sec:section_1_3}
 
-In the \acs{SM} two types of quantum numbers are assigned to leptonic fermions. The lepton number $L$ assigns the value 1/-1 to all leptonic fermions/anti fermions, and zero to everything else. Im comparison to that the lepton flavour $L_{\ell}$ with $\ell \in (e, \mu, \tau)$ assigns 1/-1 to the lepton/anti lepton with flavour $f_{\ell}$, zero to everything else. A overwiew is shown in table \ref{tab:tab_1_2}
+In the \gls{SM} two types of quantum numbers are assigned to leptonic fermions. The lepton number $L$ assigns the value 1/-1 to all leptonic fermions/anti fermions, and zero to everything else. Im comparison to that the lepton flavour $L_{\ell}$ with $\ell \in (e, \mu, \tau)$ assigns 1/-1 to the lepton/anti lepton with flavour $f_{\ell}$, zero to everything else. A overwiew is shown in table \ref{tab:tab_1_2}
 
 
 \begin{table}[h]
 	\centering
-	\caption[Lepton number/lepton flavour of leptons]{Lepton number/lepton flavour for all known leptons in the \acs{SM}}
+	\caption[Lepton number/lepton flavour of leptons]{Lepton number/lepton flavour for all known leptons in the \gls{SM}}
 	\label{tab:tab_1_2}
 
 	\begin{tabular}{l|l|l|l|l}
@@ -197,7 +197,7 @@ In the \acs{SM} two types of quantum numbers are assigned to leptonic fermions. 
 \subsection{Global lepton flavour symmetry}
 \label{sec:section_1_3_1}
 
-The \acs{SM} Langragian $\mathcal{L}^{\ell}_{\text{SM}}$ \cite{Peskin, EWK}, only looking at the parts where leptons are involved, and after introducing the Higgs bosons, like discussed in section \ref{sec:section_1_1}, can be written as
+The \gls{SM} Langragian $\mathcal{L}^{\ell}_{\text{SM}}$ \cite{Peskin, EWK}, only looking at the parts where leptons are involved, and after introducing the Higgs bosons, like discussed in section \ref{sec:section_1_1}, can be written as
 
 \begin{multline}
 	\label{eq:eq_1_12}
@@ -221,14 +221,14 @@ with $Q_{f}$ and $\alpha_{\ell}$ as real constants. In comparison to the gauge s
 \subsection{Breaking of the symmetry due to neutrino masses}
 \label{sec:section_1_3_2}
 
-The Langrangian in equation \ref{eq:eq_1_12} does not include mass terms for neutrinos, because to non observed $\nu_R$, which leads to a vanishing neutrino mass term $-m_{\nu^{f}}\bar{\nu}^{f}\nu^{f} = -m_{\nu^{f}_{L}}\bar{\nu}^{f}_{R}\nu^{f}_{L} + {\nu}^{f}_{L}\bar{\nu}^{f}_{R} = 0$. But in difference to the \acs{SM} prediction, neutrinos have a non-vanshing mass, due to the measurement of neutrino oscillation \cite{NEUTRINOOSC}. This phenomena describe change of lepton flavour of the neutrinos, which is possible because flavour eigenstates are not equal to the mass eigenstates $|\nu_{f}> \neq |\nu_{m_{f}}>$ and are connected via the unitary 3x3 PMNS matrix $U$ \cite{PMNS}: $|\nu_{f}> =  \sum_{i} U^{i}_{f}|\nu_{m_{i}}>$. The probability P of the transitation from flavour $\alpha$ to flavour $\beta$ \cite{NEUTRINOPROB} is given by 
+The Langrangian in equation \ref{eq:eq_1_12} does not include mass terms for neutrinos, because to non observed $\nu_R$, which leads to a vanishing neutrino mass term $-m_{\nu^{f}}\bar{\nu}^{f}\nu^{f} = -m_{\nu^{f}_{L}}\bar{\nu}^{f}_{R}\nu^{f}_{L} + {\nu}^{f}_{L}\bar{\nu}^{f}_{R} = 0$. But in difference to the \gls{SM} prediction, neutrinos have a non-vanshing mass, due to the measurement of neutrino oscillation \cite{NEUTRINOOSC}. This phenomena describe change of lepton flavour of the neutrinos, which is possible because flavour eigenstates are not equal to the mass eigenstates $|\nu_{f}> \neq |\nu_{m_{f}}>$ and are connected via the unitary 3x3 PMNS matrix $U$ \cite{PMNS}: $|\nu_{f}> =  \sum_{i} U^{i}_{f}|\nu_{m_{i}}>$. The probability P of the transitation from flavour $\alpha$ to flavour $\beta$ \cite{NEUTRINOPROB} is given by 
 
 \begin{equation}
 	\label{eq:eq_1_14}
 	P(\alpha \rightarrow \beta) = |\sum_{i, j} U_{\alpha}^{i} U_{\beta}^{j} e^{i\Delta m^2_{ij}L/(2E)}|^2
 \end{equation}
 
-There are two possible ways to introduce neutrino mass terms in an extended \acs{SM} langrangian. Wheather introducing right handed neutrinos (dirac type) or not (majorana type), the most general langrangians including neutrino mass terms \cite{NEUTRINOMASS} can be written as 
+There are two possible ways to introduce neutrino mass terms in an extended \gls{SM} langrangian. Wheather introducing right handed neutrinos (dirac type) or not (majorana type), the most general langrangians including neutrino mass terms \cite{NEUTRINOMASS} can be written as 
 
 \begin{equation}
 	\label{eq:eq_1_15}
@@ -238,7 +238,7 @@ There are two possible ways to introduce neutrino mass terms in an extended \acs
 	\end{split}
 \end{equation}
 
-with $M_{\ell'\ell}$ as complex 3x3 matrix, which is not diagonal, because of the different mass/flavour eigenstates of neutrinos. This leads to the breaking of the flavour symmetry, because $\mathcal{L}_{\text{Dirac}}$/$\mathcal{L}_{\text{Majorana}}$ are not invariant under the flavour transformation in equation \ref{eq:eq_1_13}. Neutrino masses introduces lepton flavour violation (\acs{LFV}), and branching ratios on neutrino mixing induced \acs{LFV} Z boson decays \cite{NEUTRINOLFV} can be calculated to be 
+with $M_{\ell'\ell}$ as complex 3x3 matrix, which is not diagonal, because of the different mass/flavour eigenstates of neutrinos. This leads to the breaking of the flavour symmetry, because $\mathcal{L}_{\text{Dirac}}$/$\mathcal{L}_{\text{Majorana}}$ are not invariant under the flavour transformation in equation \ref{eq:eq_1_13}. Neutrino masses introduces lepton flavour violation (\gls{LFV}), and branching ratios on neutrino mixing induced \gls{LFV} Z boson decays \cite{NEUTRINOLFV} can be calculated to be 
 
 \begin{equation}
 	\label{eq:eq_1_16}
@@ -254,6 +254,6 @@ This branchings ratios are far from beeing detectable, which leads to a good app
 \subsection{Lepton flavour violation beyond the Standard model}
 \label{sec:section_1_3_3}
 
-The discussion in section \ref{sec:section_1_3_2} showed, that lepton flavour symmetry is not absolute and can be broken. In the case of neutrino mixing induced \acs{LFV} non observable rates are predicted. But if \acs{LFV} would be found on a measurable level, it would imply that another process in a beyond the Standard Model (\acs{BSM}) theory exists, which breaks lepton flavour symmetry. So \acs{LFV} can be used as a probe and a getway to \acs{BSM} theories. \\
+The discussion in section \ref{sec:section_1_3_2} showed, that lepton flavour symmetry is not absolute and can be broken. In the case of neutrino mixing induced \gls{LFV} non observable rates are predicted. But if \gls{LFV} would be found on a measurable level, it would imply that another process in a beyond the Standard Model (\gls{BSM}) theory exists, which breaks lepton flavour symmetry. So \gls{LFV} can be used as a probe and a getway to \gls{BSM} theories. \\
 
-One example of such a theory is the specific supersymmetric extension of the standard model \cite{SUSYLFV}, which could predict \acs{BSM} \acs{LFV} decays. But a more convenient way to probe \acs{BSM} is to search in a model-independent approach, because a specific \acs{LFV} model is not nessecarily realized, but \acs{LFV} could still exist because of another realisation in nature. So to search for example a \acs{LFV} Z decay without any underlying model give rise to the possibility to find \acs{BSM} physics, without constraints due to the specific model dependent phase space. 
+One example of such a theory is the specific supersymmetric extension of the standard model \cite{SUSYLFV}, which could predict \gls{BSM} \gls{LFV} decays. But a more convenient way to probe \gls{BSM} is to search in a model-independent approach, because a specific \gls{LFV} model is not nessecarily realized, but \gls{LFV} could still exist because of another realisation in nature. So to search for example a \gls{LFV} Z decay without any underlying model give rise to the possibility to find \gls{BSM} physics, without constraints due to the specific model dependent phase space. 
