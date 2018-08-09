@@ -3,7 +3,6 @@
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
-\usepackage{acronym}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{url}
@@ -24,6 +23,14 @@
 \fancyhead[RO,LE]{Chapter \thechapter}
 \fancyfoot[C]{\thepage}
 
+\usepackage[acronym, nopostdot, toc, nonumberlist]{glossaries}
+
+\newglossary[for]{formulas}{forin}{forout}{Formulas}
+\makeglossaries
+\input{chapters/acronyms.tex}
+\input{chapters/formulas.tex}
+\glsaddall
+\glsunsetall
 
 \begin{document}
 
@@ -57,10 +64,8 @@
 
 \appendix
 
-\chapter*{Acronyms}
-\addcontentsline{toc}{chapter}{Acronyms}
-\input{chapters/acronyms.tex}
-\clearpage{\pagestyle{empty}\cleardoublepage}
+\printglossary[type=formulas]
+\printglossary[type=\acronymtype]
 
 \bibliographystyle{packages/bibstyle.bst}
 \bibliography{bibliography.bib}  
