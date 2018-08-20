@@ -164,9 +164,54 @@ The most outer detector component is the muon detector system, which is embedded
 \end{figure}
 
 
+\subsection{Trigger system of \gls{CMS}}
+
+The collision rate at the collision point of \gls{CMS} is about 40 Gigahertz, coming from the 25 ns space between the beam bunches, see section \ref{sec:section_2_1_1}. This collision rate leads at the luminosity of $\mathcal{L} = 10^{34}$ cm$^{-2}$s$^{-1}$ to a interaction rate of $10^9$ per second. Because the bare amount of data originating from this collisions can not completly be saved, a online selection is done by the \gls{CMS} trigger system \cite{CMS2, TRIGGER}. \\
+
+The first trigger stage is the L1 trigger. This trigger process the decision from various trigger from the detector subsystem, which uses all information recorded of the event. The second stage is the High Level Trigger \gls{HLT}. Based on the events passing the L1 trigger, the \gls{HLT} decide to keep events on behalf of kinematic variables, which are reconstructed online during the trigger decision. 
+
 \subsection{Particle interactions with the detector components}
 \label{sec:section_2_2_3}
 
-The dectector component described in the previous section are designed to detect and measure properties of different kind of particles. Charged particle, like leptons and charged hadrons, are bend trajectory in the in magnetic field of \gls{CMS} and leaving hits in the pixel and strip detectors of the tracker system. Neutral particles like photons and neutral hadrons dont leave any track in the tracker system and straight trajectory. In the \gls{ECAL} electrons and photons interact with the \gls{PbWO4} and trigger a electromagnetic shower, until the complete energy is deposited. In the \gls{HCAL} all kind of hadrons interact with the bress triggering a cascade of hadron production, until the complete energy is deposited. The muons, which penetrate all this system without any interaction, leave hits in the muon detector system. Neutrinos can not be measured at all and escape the complete dectector system undetected.
+The dectector component described in the previous section are designed to detect and measure properties of different kind of particles. Charged particle, like leptons and charged hadrons, have bended trajectory in the in magnetic field of \gls{CMS} and leaving hits in the pixel and strip detectors of the tracker system. Neutral particles like photons and neutral hadrons dont leave any track in the tracker system and have a straight trajectory. In the \gls{ECAL} electrons and photons interact with the \gls{PbWO4} and trigger a electromagnetic shower, until the complete energy is deposited. In the \gls{HCAL} all kind of hadrons interact with the bress triggering a cascade of hadron production, until the complete energy is deposited. The muons, which penetrate all this system without any interaction, leave hits in the muon detector system. Neutrinos can not be measured at all and escape the complete dectector system undetected. \\
+
+The cascade of particles in the calorimeter systems, which originating from one object, like a quark or gluon, are so-called jets. There are different algorithm to define and reconstruct jets in \gls{CMS} using the definition of a cone with \gls{dR} $= \sqrt{(\Delta \phi)^{2} + (\Delta \eta)^{2}}$.\\ 
+
+From the bending radius of the particles and in tracker system and for the muons in the muon detector system, the transerve momentum \gls{pT} $= \sqrt{p_{x}^{2} + p_{y}^{2}}$ can be measured using 
+
+\begin{equation}
+	\label{eq:eq_2_5}
+	p_{T} = q\cdot B \cdot R
+\end{equation} 
+
+with $q$ as the electric charge of the particle, $B$ the magnetic field flux and R the bending radius of the trajectory. The energy of particles is measured using the energy deposition in the calorimeter systems. Due to neutrinos and possible \gls{BSM} weakly interacting particles, some energy gets carries away unmeasured. This missing energy measured in the transverse plane (\gls{MET}) is calculated using the fact that in the transverse plane the sum of the momenta should be zero, due to the protons only having momenta in z-direction. This leads to the formula for \gls{MET}
+
+\begin{equation}
+	\label{eq:eq_2_6}
+	\cancel{\vec{E}}_{T} = - \sum_{i \in (1, .., n_{\text{meas.}})} \vec{p}_{T}^{i} 
+\end{equation}
+
+Unstable particles, which decay not immediately, like the $\tau$ lepton, leave a track in the tracker system with a sudden change of direction. At this so-called secondary vertex the $\tau$ lepton decays, for example into a muon and two neutrinos, where the muon leaves the track measured originating from the second track. To characterize the properties of the particles coming from secondary vertices, the trajectory is extrapolated beyond the secondary vertex and the point of closest approach $d_{0}$ is measured of this extrapolated trajectory and the colission point, see figure \ref{fig:fig_2_11}.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\draw[blue, ultra thick] (-6,0) -- (-3,0) node[anchor=south] {$\tau$};
+		\draw[->, blue, ultra thick] (-6,0) -- (0,0);
+		\draw[red, ultra thick] (0,0) -- (1.5,1.5) node[anchor=south] {$\mu$};
+		\draw[->, red, ultra thick] (1.5,1.5) -- (3,3);
+		\draw[green, ultra thick] (0,0) -- (1.5,-1.5) node[anchor=south] {$\nu_{\mu}$};
+		\draw[->, green, ultra thick] (1.5,-1.5) -- (3,-3);
+		\draw[green, ultra thick] (0,0) -- (0,-1.5) node[anchor=east] {$\nu_{\tau}$};
+		\draw[->, green, ultra thick] (0,-1.5) -- (0,-3.5);
+		\draw[red, ultra thick, dashed] (-3,-3) -- (0,0);
+		\draw[<-, gray, ultra thick, dashed] (-6,0) -- (-4.5,-1.5) node[anchor=north east] {$d_0$};
+		\draw[->, gray, ultra thick, dashed] (-4.5,-1.5) -- (-3,-3);
+		\filldraw[black] (-6,0) circle (3pt) node[anchor=east] {Primary vertex};
+		\filldraw[black] (0,0) circle (3pt) node[anchor=west] {Secondary vertex};
+	\end{tikzpicture}
+	\caption[Construction of point of closest approach]{Construction for measuring the point of closest approach $d_{0}$ of the muon trajectory to the collision point}
+	\label{fig:fig_2_11}
+\end{figure}
 
 
