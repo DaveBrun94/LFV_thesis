@@ -1,0 +1,259 @@
+The goal of the analysis is to search for a direct indication of \gls{LFV} in the decay of Z bosons using data from proton proton collision measured at \gls{CMS}. Beside the \gls{LFV} process, which is called signal, \gls{SM} processes exists, which leaves the same signature in the detector, but have different kinematic properties, they are referred to as backgrounds. To study the differences of signal and background, both are simulated using the Monte Carlo sampling (\gls{MC}). Including stastitical and systematic uncertanties arising from the measurement, in the end stastical methods are used to evaluate the simulation in comparison to real measured data. 
+
+\section{Signature of the signal and background processes}
+
+\subsection{$\tau$ lepton at \gls{CMS}}
+\label{sec:section_3_1_1}
+
+The $\tau$ lepton \cite{TAU} is the one of three leptons in the \gls{SM} and has a special role in comparison to electrons or muons. Due to the mean life time of 2.9$\cdot 10^{-13}$ the $\tau$ lepton decays after a flight distance of a few micrometer and leave secondary verteces in the tracker system. The $\tau$ lepton can decay leptonically with a branching ratio of $\text{BR}(\tau \to l\nu_{\tau}\nu_{l}) = 0.34$ or hadronically with a branching ratio of $\text{BR}(\tau \to \nu_{\tau} + \text{hadrons}) = 0.66$. Because of the high branching ratio of the hadronic decaying $\tau$ leptons (\gls{TAUH}), only this type of decay is considered in the analysis. The hadronic decays products, dependent on the speficic hadronic decay mode, leave jets as signature in \gls{CMS}.
+
+\subsection{Signal process}
+\label{sec:section_3_1_2}
+
+To violate lepton flavour, the individual sum of each lepton flavour in initial and final state must be different: 
+
+\begin{equation}
+	\label{eq:eq_3_1}
+	\sum_{n \text{ initial state particle}} f_{n} \neq  \sum_{n \text{ final state particle}} f_{n}
+\end{equation}
+
+In the case of a Z boson, produced via quark annilihation in a proton proton collider, three possible configuration fullfill the condition. The direct decay of a Z boson into a electron and a muon, referred to as $e\mu$ final state, into an electron and a $\tau$ lepton, referred to as $e\tau$ final state, and into a muon and a $\tau$ lepton, referred to as $\mu\tau$ final state, violate lepton flavour. \\
+
+\begin{figure}
+	\centering
+
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$q$] (q1);
+		\coordinate[below=3cm of q1, label=left:$q$] (q2);
+   
+		\coordinate[below =1.5cm of q1] (k1); \coordinate[right =1.5cm of k1] (v1); 
+		\coordinate[right =2cm of v1] (v2); \coordinate[right =1.5cm of v2] (k2);
+		
+		\coordinate[above=1.5 cm of k2,label=right:$e$] (l1);
+		\coordinate[below=3cm of l1, label=right:$\mu$] (l2);
+
+		\draw[fermion] (q1) -- (v1);
+		\draw[fermion] (v1) -- (q2);
+		\draw[photon] (v1) -- node[label=above:$Z$] {} (v2);
+		\draw[fermion] (l1) -- (v2);
+		\draw[fermion] (v2) -- (l2);
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$q$] (q1);
+		\coordinate[below=3cm of q1, label=left:$q$] (q2);
+   
+		\coordinate[below =1.5cm of q1] (k1); \coordinate[right =1.5cm of k1] (v1); 
+		\coordinate[right =2cm of v1] (v2); \coordinate[right =1.5cm of v2] (k2);
+		
+		\coordinate[above=1.5 cm of k2,label=right:$e$] (l1);
+		\coordinate[below=3cm of l1, label=right:$\tau$] (l2);
+
+		\draw[fermion] (q1) -- (v1);
+		\draw[fermion] (v1) -- (q2);
+		\draw[photon] (v1) -- node[label=above:$Z$] {} (v2);
+		\draw[fermion] (l1) -- (v2);
+		\draw[fermion] (v2) -- (l2);
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$q$] (q1);
+		\coordinate[below=3cm of q1, label=left:$q$] (q2);
+   
+		\coordinate[below =1.5cm of q1] (k1); \coordinate[right =1.5cm of k1] (v1); 
+		\coordinate[right =2cm of v1] (v2); \coordinate[right =1.5cm of v2] (k2);
+		
+		\coordinate[above=1.5 cm of k2,label=right:$\mu$] (l1);
+		\coordinate[below=3cm of l1, label=right:$\tau$] (l2);
+
+		\draw[fermion] (q1) -- (v1);
+		\draw[fermion] (v1) -- (q2);
+		\draw[photon] (v1) -- node[label=above:$Z$] {} (v2);
+		\draw[fermion] (l1) -- (v2);
+		\draw[fermion] (v2) -- (l2);
+	\end{tikzpicture}
+	
+	\caption[Feynman diagram of LFV Z boson decay]{Feynman diagram of LFV Z boson decay into the $e\mu$, $e\tau$ and $\mu\tau$ final state}
+	\label{fig:fig_3_1}
+
+\end{figure}
+
+In the detector such processes would leave an electron/muon pair, both directly originating from collisions point, for the $e\mu$ final state, and a lepton/jet pair, where the lepton originates from the collision point and the jet originate from a secondary vertex of a \gls{TAUH}.  
+
+\subsection{Background processes}
+
+Background processes have the same particles in the final state as the \gls{LFV}, but they originate from leptonic/semi-leptonic decays of the mother particles or from misidentification of the particles. This leads to differences in kinematic distributions, different secondary verteces or/and additional particles in the final state beside the two leptons. \\
+
+The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ process, where in the $e\mu$ final state both $\tau$ leptons decays leptonically into an electron, a muon and four neutrinos, and in the $e\tau$ and $\mu\tau$ final state one $\tau$ lepton decays leptonically into a lepton and the other one decays hadronically with three neutrinos. The leptons from the $\tau$ lepton decays originate from secondary verteces, have different angular correlation lepton coming directly from the Z boson like in the \gls{LFV} process and will in average more \gls{MET} and less momenta due to the neutrinos, which carries away the momenta undetected. Figure \ref{fig:fig_3_2} shows the Feynman diagram of the leptonic decay chain. Beside the $Z\to\tau\tau$ process, the second \gls{DY} process is $Z\to\ell\ell$, where one of the leptons $\ell$ has a misidentified lepton flavour. In this case the kinematic proporties are quite similiar to the \gls{LFV} process, because the lepton also originate from the $Z$ boson, and have no secondary verteces or neutrinos. \\
+
+
+\begin{figure}
+	\centering
+
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$q$] (q1);
+		\coordinate[below=3cm of q1, label=left:$q$] (q2);
+
+		\coordinate[right =1.5cm of k1] (v1); 
+		\coordinate[right =2cm of v1] (v2); \coordinate[right =1.5cm of v2] (k2);
+	
+		\coordinate[above=1.5 cm of k2] (tau1);
+		\coordinate[below=1.5cm of k2] (tau2);
+	
+		\coordinate[right=1.5 cm of tau1] (k3);
+		\coordinate[above=1 cm of k3, ] (W1);
+		\coordinate[below=1 cm of k3,label=right:$\nu_{\tau}$] (nu1);
+		\coordinate[right=1.5 cm of W1] (k4);
+		\coordinate[above=1 cm of k4, label=right:$\ell$] (l1);
+		\coordinate[below=1 cm of k4, label=right:$\nu_{\ell}$] (nu2);
+	
+		\coordinate[right=1.5 cm of tau2] (k5);
+		\coordinate[above=1 cm of k5,label=right:$\nu_{\tau}$] (nu3);
+		\coordinate[below=1 cm of k5] (W2);
+		\coordinate[right=1.5 cm of W2] (k6);
+		\coordinate[above=1 cm of k6, label=right:$\ell'$] (l2);
+		\coordinate[below=1 cm of k6,label=right:$\nu_{\ell'}$] (nu4);
+	
+		\draw[fermion] (q1) -- (v1);
+		\draw[fermion] (v1) -- (q2);
+		\draw[photon] (v1) -- node[label=above:$Z$] {} (v2);
+		\draw[fermion] (tau1) -- node[label=above:$\tau$] {} (v2);
+		\draw[fermion] (v2) -- node[label=below:$\tau$] {} (tau2);
+	
+   		\draw[fermion] (nu1) -- (tau1);
+   		\draw[photon] (tau1) -- node[label=above:$W$] {} (W1);
+   		\draw[fermion] (l1) -- (W1);
+   		\draw[fermion] (W1) -- (nu2);
+	
+   		\draw[photon] (W2) -- node[label=below:$W$] {} (tau2);
+   		\draw[fermion] (tau2) -- (nu3);
+   		\draw[fermion] (l2) -- (W2);
+   		\draw[fermion] (W2) -- (nu4);
+	\end{tikzpicture}
+	
+	\caption[Feynman diagram of $Z\to\tau\tau$ decay]{Feynman diagram of $Z\to\tau\tau$ fully leptonic decay in the $e\mu$ final state}
+	\label{fig:fig_3_2}
+\end{figure}
+
+One of the other backgrounds due to leptonic decay is the top/anti top production (\gls{TTBAR}), in which the top pair decays leptoncally into leptons, b-quarks and neutrinos. Like in the $Z\to\tau\tau$ process the lepton originate from secondary verteces and have different kinematic properties in comparison to the signal. Figure \ref{fig:fig_3_3} shows the Feynman diagram of the leptonic decay chain. \\
+
+
+\begin{figure}
+	\centering
+
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$g$] (g1);
+		\coordinate[below=3cm of g1, label=left:$g$] (g2);
+
+		\coordinate[right =1.5cm of k1] (v1); 
+		\coordinate[right =2cm of v1] (v2); \coordinate[right =1.5cm of v2] (k2);
+	
+		\coordinate[above=1.5 cm of k2] (top1);
+		\coordinate[below=1.5cm of k2] (top2);
+	
+		\coordinate[right=1.5 cm of tau1] (k3);
+		\coordinate[above=1 cm of k3, ] (W1);
+		\coordinate[below=1 cm of k3,label=right:$b$] (b1);
+		\coordinate[right=1.5 cm of W1] (k4);
+		\coordinate[above=1 cm of k4, label=right:$\ell$] (l1);
+		\coordinate[below=1 cm of k4, label=right:$\nu_{\ell}$] (nu1);
+	
+		\coordinate[right=1.5 cm of tau2] (k5);
+		\coordinate[above=1 cm of k5,label=right:$b$] (b2);
+		\coordinate[below=1 cm of k5] (W2);
+		\coordinate[right=1.5 cm of W2] (k6);
+		\coordinate[above=1 cm of k6, label=right:$\ell'$] (l2);
+		\coordinate[below=1 cm of k6,label=right:$\nu_{\ell'}$] (nu2);
+	
+		\draw[gluon] (g1) -- (v1);
+		\draw[gluon] (v1) -- (g2);
+		\draw[gluon] (v1) -- node[label=above:$g$] {} (v2);
+		\draw[fermion] (top1) -- node[label=above:$t$] {} (v2);
+		\draw[fermion] (v2) -- node[label=below:$t$] {} (top2);
+	
+   		\draw[fermion] (b1) -- (top1);
+   		\draw[photon] (top1) -- node[label=above:$W$] {} (W1);
+   		\draw[fermion] (l1) -- (W1);
+   		\draw[fermion] (W1) -- (nu1);
+	
+   		\draw[photon] (W2) -- node[label=below:$W$] {} (top2);
+   		\draw[fermion] (top2) -- (b2);
+   		\draw[fermion] (l2) -- (W2);
+   		\draw[fermion] (W2) -- (nu2);
+	\end{tikzpicture}
+
+	\caption[Feynman diagram of \gls{TTBAR} decay]{Feynman diagram of \gls{TTBAR} decay chain}
+	\label{fig:fig_3_3}
+\end{figure}
+
+Beside the decay of fermions like the $\tau$ leptons and the tops, vector boson decays contributes the final states, which are under investigation. The possible vector bosons pairs are $ZZ$/$WW$/$WZ$. For the $WW$ pair, both $W$ bosons decays leptonically with two neutrinos, for the $ZZ$ pair both Z bosons decays leptonically, where two leptons of the four leptons are misidentified, and for the $WZ$ pair both decay leptonically, there one of the three leptons is misidentified. Figure \ref{fig:fig_3_4} shows the Feynman diagram of vector boson production. \\
+
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$q$] (q1);
+		\coordinate[right=2cm of q1] (v1);
+		\coordinate[below=2.5cm of v1] (v2);
+		\coordinate[left=2cm of v2, label=left:$q$] (q2);
+		\coordinate[right=2cm of v1] (Z1);
+		\coordinate[right=2cm of v2] (Z2);
+		
+		\coordinate[right=1 cm of Z1] (k1);
+		\coordinate[above=1 cm of k1, label=right:$\ell/\ell$] (l1);
+		\coordinate[below=1 cm of k1, label=right:$\ell/\nu_{\ell}$] (l2);
+		
+		\coordinate[right=1 cm of Z2] (k2);
+		\coordinate[above=1 cm of k2, label=right:$\ell'/\ell'$] (l3);
+		\coordinate[below=1 cm of k2, label=right:$\ell'/\nu_{\ell'}$] (l4);
+		
+		\draw[fermion] (q1) -- (v1);
+		\draw[fermion] (v1)  -- node[label=left:$q$] {} (v2);
+		\draw[fermion] (v2) -- (q2);
+		\draw[photon] (v1)  -- node[label=above:$Z/W$] {} (Z1);
+		\draw[photon] (v2)  -- node[label=below:$Z/W$] {} (Z2);
+		
+		\draw[fermion] (l1) -- (Z1);
+		\draw[fermion] (Z1) -- (l2);
+		\draw[fermion] (l3) -- (Z2);
+		\draw[fermion] (Z2) -- (l4);
+	\end{tikzpicture}
+
+	\caption[Feynman diagram of vector boson production]{Feynman diagram of vector boson production}
+	\label{fig:fig_3_4}
+\end{figure}
+
+On the other side processes exist, in which the end state particles are misidentified, like $Z\to\ell\ell$ discussed before. There are two main processes contributing. One of the processes if the single $W$ boson production in association of a quark, like shown in figure \ref{fig:fig_3_5}. The $W$ boson decays leptonically, but the quark, which leaves a jet in the detector, is misidentified as a lepton, in most cases the jet is reconstructed as a \gls{TAUH}.
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[node distance=1.5cm]
+		\coordinate[label=left:$g$] (g);
+		\coordinate[below=3cm of g, label=left:$q$] (q1);
+		
+		\coordinate[right=2cm of g] (k);
+		\coordinate[below=1cm of k] (v1);
+		\coordinate[below=1cm of v1] (v2);
+		
+		\coordinate[right=4cm of g, label=right:$q'$] (q3);
+		\coordinate[right=4cm of q1] (W);
+
+		\coordinate[right=1cm of W] (k2);
+		\coordinate[above=1cm of k2, label=right:$\ell$] (l);
+		\coordinate[below=1cm of k2, label=right:$\nu_{\ell}$] (nu);
+		
+		\draw[gluon] (g) -- (v1);
+		\draw[fermion] (q1) -- (v2);
+		\draw[fermion] (v2) -- node[label=right:$q'$] {} (v1);
+		\draw[fermion] (v1) -- (q3);
+		\draw[photon] (v2) -- node[label=below:$W$] {} (W);
+
+		\draw[fermion] (nu) -- (W);
+		\draw[fermion] (W) -- (l); 
+	\end{tikzpicture}
+
+	\caption[Feynman diagram of $W + \text{jets}$]{Feynman diagram of \gls{TTBAR} decay chain}
+	\label{fig:fig_3_5}
+\end{figure}
+
+
