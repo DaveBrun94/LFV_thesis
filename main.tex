@@ -6,13 +6,26 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{url}
+\usepackage{cancel}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\tikzset{
+	fermion/.style={thick,draw=black, postaction={decorate}, decoration={markings,mark=at position 0.6 with {\arrow[black]{triangle 45}}}},
+	photon/.style={decorate, draw=black, decoration={coil,aspect=0}},
+	gluon/.style={decorate, draw=black, decoration={coil,amplitude=4pt, segment length=5pt}} 
+}
+
 
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks,
-    linkcolor= [RGB]{8 0 125},
-    citecolor= [RGB]{8 0 125},
-    urlcolor= [RGB]{8 0 125}
+	colorlinks,
+	linkcolor= [RGB]{8 0 125},
+	citecolor= [RGB]{8 0 125},
+	urlcolor= [RGB]{8 0 125}
 }
 
 \usepackage{fancyhdr}
@@ -62,7 +75,9 @@
 \input{chapters/chapter2_CMS.tex}
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
-\appendix
+\chapter{Analysis strategy}
+\input{chapters/chapter3_analysis.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
 \printglossary[type=formulas]
 \printglossary[type=\acronymtype]
