@@ -1,14 +1,10 @@
-The goal of the analysis is to search for a direct indication of \gls{LFV} in the decay of Z bosons using data from proton proton collision measured at \gls{CMS}. Beside the \gls{LFV} process, which is called signal, \gls{SM} processes exists, which leaves the same signature in the detector, but have different kinematic properties, they are referred to as backgrounds. To study the differences of signal and background, both are simulated using the Monte Carlo sampling (\gls{MC}). Including stastitical and systematic uncertanties arising from the measurement, in the end stastical methods are used to evaluate the simulation in comparison to real measured data. 
+The goal of the analysis is to search for a direct indication of \gls{LFV} in the decay of Z bosons using data from proton-proton collisions measured at \gls{CMS}. Two kinds of process have to be analyzed. The first process is the signal process of the \gls{LFV} decaying Z boson. The second process are background processes of the \gls{SM} leaving the same final state particles as the signal process. To study the differences of signal and background, both are simulated using Monte Carlo simulations (\gls{MC}). Including statistical and systematic uncertainties arising from the measurement, statistical methods are used to evaluate the simulation in comparison to data. 
+
 
 \section{Signal and background processes}
 
-\subsection{$\tau$ lepton at \gls{CMS}}
-\label{sec:section_3_1_1}
-
-The $\tau$ lepton \cite{TAU} is the one of three leptons in the \gls{SM} and has a special role in comparison to electrons or muons. Due to the mean life time of 2.9$\cdot 10^{-13}$ the $\tau$ lepton decays after a flight distance of a few micrometer and leave secondary verteces in the tracker system. The $\tau$ lepton can decay leptonically with a branching ratio of $\text{BR}(\tau \to l\nu_{\tau}\nu_{l}) = 0.34$ or hadronically with a branching ratio of $\text{BR}(\tau \to \nu_{\tau} + \text{hadrons}) = 0.66$. Because of the high branching ratio of the hadronic decaying $\tau$ leptons (\gls{TAUH}), only this type of decay is considered in the analysis. The hadronic decays products, dependent on the speficic hadronic decay mode, leave jets as signature in \gls{CMS}.
-
 \subsection{Signal process}
-\label{sec:section_3_1_2}
+\label{sec:section_3_1_1}
 
 To violate lepton flavour, the individual sum of each lepton flavour in initial and final state must be different: 
 
@@ -17,7 +13,7 @@ To violate lepton flavour, the individual sum of each lepton flavour in initial 
 	\sum_{n \text{ initial state particle}} f_{n} \neq  \sum_{n \text{ final state particle}} f_{n}
 \end{equation}
 
-In the case of a Z boson, produced via quark annilihation in a proton proton collider, three possible configuration fullfill the condition. The direct decay of a Z boson into a electron and a muon, referred to as $e\mu$ final state, into an electron and a $\tau$ lepton, referred to as $e\tau$ final state, and into a muon and a $\tau$ lepton, referred to as $\mu\tau$ final state, violate lepton flavour. \\
+In the case of a Z boson, produced via quark annihilation in a proton proton collider, three possible configurations fulfil the condition. The direct decay of a Z boson into an electron and a muon, referred to as $e\mu$ final state, into an electron and a $\tau$ lepton, referred to as $e\tau$ final state, or into a muon and a $\tau$ lepton, referred to as $\mu\tau$ final state, violates lepton flavour. The feynman diagrams of these processes are shown in figure \ref{fig:fig_3_1}. \\
 
 \begin{figure}[htp]
 	\centering
@@ -78,13 +74,16 @@ In the case of a Z boson, produced via quark annilihation in a proton proton col
 
 \end{figure}
 
-In the detector such processes would leave an electron/muon pair, both directly originating from collisions point, for the $e\mu$ final state, and a lepton/jet pair, where the lepton originates from the collision point and the jet originate from a secondary vertex of a \gls{TAUH}.  
+The $\tau$ lepton \cite{TAU} has a special role in comparison to electrons or muons. Due to the mean life time of 2.9$\cdot 10^{-13}$ seconds the $\tau$ lepton decays after a flight distance of a few micrometers and leaves secondary vertices in the tracker system. The $\tau$ lepton can decay leptonically with a branching ratio of $\text{BR}(\tau \to l\nu_{\tau}\nu_{l}) = 0.34$ or hadronically with a branching ratio of $\text{BR}(\tau \to \nu_{\tau} + \text{hadrons}) = 0.66$. Because of the high branching ratio of the hadronic decaying $\tau$ leptons (\gls{TAUH}), only this type of decay is considered in the content of the analysis. The \gls{TAUH} are reconstructed from jets, which originate from the hadrons of the $\tau$ decay. 
 
 \subsection{Background processes}
+\label{sec:section_3_1_2}
 
-Background processes have the same particles in the final state as the \gls{LFV}, but they originate from leptonic/semi-leptonic decays of the mother particles or from misidentification of the particles. This leads to differences in kinematic distributions, different secondary verteces or/and additional particles in the final state beside the two leptons. \\
+Background processes have the same particles in the final state as the \gls{LFV}, but they originate from leptonic/semi-leptonic decays of the mother particles or from misidentification of the particles. This leads to differences in kinematic distributions, different secondary vertices and/or additional particles in the final state beside the two leptons. \\
 
-The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ process, where in the $e\mu$ final state both $\tau$ leptons decays leptonically into an electron, a muon and four neutrinos, and in the $e\tau$ and $\mu\tau$ final state one $\tau$ lepton decays leptonically into a lepton and the other one decays hadronically with three neutrinos. The leptons from the $\tau$ lepton decays originate from secondary verteces, have different angular correlation lepton coming directly from the Z boson like in the \gls{LFV} process and will in average more \gls{MET} and less momenta due to the neutrinos, which carries away the momenta undetected. Figure \ref{fig:fig_3_2} shows the Feynman diagram of the leptonic decay chain. Beside the $Z\to\tau\tau$ process, the second \gls{DY} process is $Z\to\ell\ell$, where one of the leptons $\ell$ has a misidentified lepton flavour. In this case the kinematic proporties are quite similiar to the \gls{LFV} process, because the lepton also originate from the $Z$ boson, and have no secondary verteces or neutrinos. \\
+\subsection*{Drell Yan}
+
+The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ process, both $\tau$ leptons decays leptonically into an electron, a muon and four neutrinos, or one $\tau$ lepton decays leptonically into a lepton and the other one decays hadronically with three neutrinos. The leptons from the $\tau$ lepton decays originate from secondary vertices and have different kinematic properties in comparison to the leptons originating from \gls{LFV}. Due to the neutrinos, which carries away the momenta undetected, this process will have in general more \gls{MET} in the event compared to the \gls{LFV} process. Figure \ref{fig:fig_3_2} shows the Feynman diagram of the leptonic decay chain. Besides the $Z\to\tau\tau$ process, the second \gls{DY} process is $Z\to\ell\ell$ with $l \in (e, \mu$), where one of the leptons $\ell$ has a misidentified lepton flavour. In this case the kinematic properties are quite similar to the \gls{LFV} process, because the lepton also originate from the $Z$ boson, and have no secondary vertices or neutrinos. \\
 
 
 \begin{figure}[htp]
@@ -104,15 +103,15 @@ The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ proce
 		\coordinate[above=1 cm of k3, ] (W1);
 		\coordinate[below=1 cm of k3,label=right:$\nu_{\tau}$] (nu1);
 		\coordinate[right=1.5 cm of W1] (k4);
-		\coordinate[above=1 cm of k4, label=right:$\ell$] (l1);
-		\coordinate[below=1 cm of k4, label=right:$\nu_{\ell}$] (nu2);
+		\coordinate[above=1 cm of k4, label=right:$e$] (l1);
+		\coordinate[below=1 cm of k4, label=right:$\nu_{e}$] (nu2);
 	
 		\coordinate[right=1.5 cm of tau2] (k5);
 		\coordinate[above=1 cm of k5,label=right:$\nu_{\tau}$] (nu3);
 		\coordinate[below=1 cm of k5] (W2);
 		\coordinate[right=1.5 cm of W2] (k6);
-		\coordinate[above=1 cm of k6, label=right:$\ell'$] (l2);
-		\coordinate[below=1 cm of k6,label=right:$\nu_{\ell'}$] (nu4);
+		\coordinate[above=1 cm of k6, label=right:$\mu$] (l2);
+		\coordinate[below=1 cm of k6,label=right:$\nu_{\mu}$] (nu4);
 	
 		\draw[fermion] (q1) -- (v1);
 		\draw[fermion] (v1) -- (q2);
@@ -135,7 +134,9 @@ The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ proce
 	\label{fig:fig_3_2}
 \end{figure}
 
-One of the other backgrounds due to leptonic decay is the top/anti top production (\gls{TTBAR}), in which the top pair decays leptoncally into leptons, b-quarks and neutrinos. Like in the $Z\to\tau\tau$ process the lepton originate from secondary verteces and have different kinematic properties in comparison to the signal. Figure \ref{fig:fig_3_3} shows the Feynman diagram of the leptonic decay chain. \\
+\subsection*{Top/anti-top production}
+
+One of the other backgrounds is the top/anti-top production (\gls{TTBAR}), in which the top pair decays leptoncally into leptons, b-quarks and neutrinos. Figure \ref{fig:fig_3_3} shows the Feynman diagram of the leptonic decay chain. Like in the $Z\to\tau\tau$ process the leptons originate from secondary vertices and have different kinematic properties in comparison to the signal. \\
 
 
 \begin{figure}[htp]
@@ -186,7 +187,9 @@ One of the other backgrounds due to leptonic decay is the top/anti top productio
 	\label{fig:fig_3_3}
 \end{figure}
 
-Beside the decay of fermions like the $\tau$ leptons and the tops, vector boson decays contributes the final states, which are under investigation. The possible vector bosons pairs are $ZZ$/$WW$/$WZ$. For the $WW$ pair, both $W$ bosons decays leptonically with two neutrinos, for the $ZZ$ pair both Z bosons decays leptonically, where two leptons of the four leptons are misidentified, and for the $WZ$ pair both decay leptonically, there one of the three leptons is misidentified. Figure \ref{fig:fig_3_4} shows the Feynman diagram of vector boson production. \\
+\subsection*{Di-boson}
+
+Besides the decay of fermions like the $\tau$ leptons and the tops, also the lepton decay of a pair of vector bosons leaves to leptons. The possible vector bosons pairs are $ZZ$/$WW$/$WZ$. Figure \ref{fig:fig_3_4} shows the Feynman diagram of vector boson production. For the $WW$ pair, the $W$ bosons decay into two leptons with two neutrinos, for the $ZZ$ pair the Z bosons decay into four leptons, where two leptons are not identified correctly, and for the $WZ$ pair the bosons decay into three leptons and a neutrino, there one of the leptons is not identified correctly. \\
 
 
 \begin{figure}[htp]
@@ -219,11 +222,13 @@ Beside the decay of fermions like the $\tau$ leptons and the tops, vector boson 
 		\draw[fermion] (Z2) -- (l4);
 	\end{tikzpicture}
 
-	\caption[Feynman diagram of vector boson production]{Feynman diagram of vector boson production}
+	\caption[Feynman diagram of vector boson process]{Feynman diagram of vector boson process}
 	\label{fig:fig_3_4}
 \end{figure}
 
-On the other side processes exist, in which the end state particles are misidentified, like $Z\to\ell\ell$ discussed before. There are two main processes contributing. One of the processes if the single $W$ boson production in association of a quark, like shown in figure \ref{fig:fig_3_5}. The $W$ boson decays leptonically, but the quark, which leaves a jet in the detector, is misidentified as a lepton, in most cases the jet is reconstructed as a \gls{TAUH}. The other process are so-called \gls{QCD} multijet processes, which are the result of the hard interaction of the partons from the protons and leads to quarks/gluons in the final state, which jets are then misidentified as leptons. Figure  \ref{fig:fig_3_6} shows two possible Feynman diagrams contributing to the \gls{QCD} background.
+\subsection*{W + jets and \gls{QCD}}
+
+On the other hand processes exist, in which the end state particles are not identified correctly, like discussed for the $Z\to\ell\ell$ process. One of the processes is the single $W$ boson production in association with a quark, as seen in figure \ref{fig:fig_3_5}. The $W$ boson decays leptonically, but the quark jet is misidentified as a lepton or a \gls{TAUH}. The other process are \gls{QCD} multijet processes, which are the result of the hard interaction of the partons from the protons. These processes lead to quarks/gluons in the final state, which jets are then misidentified as leptons. Figure  \ref{fig:fig_3_6} shows two possible Feynman diagrams contributing to the \gls{QCD} background. \\
 
 \begin{figure}[htp]
 	\centering
@@ -252,12 +257,11 @@ On the other side processes exist, in which the end state particles are misident
 		\draw[fermion] (W) -- (l); 
 	\end{tikzpicture}
 
-	\caption[Feynman diagram of $W + \text{jets}$]{Feynman diagram of $W + \text{jets}$ production}
+	\caption[Feynman diagram of $W + \text{jets}$ process]{Feynman diagram of $W + \text{jets}$ process}
 	\label{fig:fig_3_5}
 \end{figure}
 
 \begin{figure}[htp]
-	\begin{minipage}{0.4\textwidth}
 		\begin{tikzpicture}[node distance=1.5cm]
 			\coordinate[label=left:$g$] (g1);
 			\coordinate[below=3cm of g1, label=left:$g$] (g2);   			
@@ -272,26 +276,22 @@ On the other side processes exist, in which the end state particles are misident
 			\draw[gluon] (v1) -- node[label=above:$g$] {} (v2);
 			\draw[fermion] (q1) -- (v2);
 			\draw[fermion] (v2) -- (q2);
-		\end{tikzpicture}
-	\end{minipage}
 
-	\begin{minipage}{0.4\textwidth}
-		\begin{tikzpicture}[node distance=1.5cm]
-			\coordinate[label=left:$q$] (q1);
-			\coordinate[right=2cm of q1] (v1);
-			\coordinate[below=2.5cm of v1] (v2);
-			\coordinate[left=2cm of v2, label=left:$q$] (q2);
-			\coordinate[right=2cm of v1] (g1);
-			\coordinate[right=2cm of v2] (g2);
+			\coordinate[right=3cm of q1, label=left:$q$] (2_q1);
+			\coordinate[right=2cm of 2_q1] (2_v1);
+			\coordinate[below=2.5cm of 2_v1] (2_v2);
+			\coordinate[left=2cm of 2_v2, label=left:$q$] (2_q2);
+			\coordinate[right=2cm of 2_v1] (2_g1);
+			\coordinate[right=2cm of 2_v2] (2_g2);
 
 			
-			\draw[fermion] (q1) -- (v1);
-			\draw[fermion] (v1)  -- node[label=left:$q$] {} (v2);
-			\draw[fermion] (v2) -- (q2);
-			\draw[gluon] (v1)  -- node[label=above:$g$] {} (g1);
-			\draw[gluon] (v2)  -- node[label=below:$g$] {} (g2);
+			\draw[fermion] (2_q1) -- (2_v1);
+			\draw[fermion] (2_v1)  -- node[label=left:$q$] {} (2_v2);
+			\draw[fermion] (2_v2) -- (2_q2);
+			\draw[gluon] (2_v1)  -- node[label=above:$g$] {} (2_g1);
+			\draw[gluon] (2_v2)  -- node[label=below:$g$] {} (2_g2);
 		\end{tikzpicture}
-	\end{minipage}
+
 	
 	\caption[Feynman diagram of \gls{QCD} background]{Feynman diagram of two possible contributions to the \gls{QCD} multijet background}
 	\label{fig:fig_3_6}
@@ -301,139 +301,128 @@ On the other side processes exist, in which the end state particles are misident
 \section{Event selection}
 \label{sec:section_3_2}
 
-From all events, which are recorded and stored by \gls{CMS}, only a fraction of them are particulary interesting regarding the search for \gls{LFV}. First the search for \gls{LFV} requires events having leptons with different flavour, and second it must be ensured the best quality of the idenfication of the particles. Because of this, a analysis specific event selection is performed, to select the events of interest. This selection is divided into two steps. The first step is the reconstruction/idenfication of the objects, where the raw detector information is evaluated the specific software tools to conclude about the type of particle. The second step is to select the reconstructed objects of interest in specific events and to set criteria in regard if quality of reconstruction. 
+From all events, which are recorded by \gls{CMS}, only a fraction of them are particularly interesting regarding the search for \gls{LFV}. The search for \gls{LFV} requires events having leptons with different flavour, which are well reconstructed and isolated. Because of this, an analysis specific event selection is performed. This selection is divided into two steps. The first step is the reconstruction/identification of the objects, where the raw detector information is evaluated with specific software tools. The second step is to select the reconstructed objects of interest in specific events and to set criteria in regard to the quality of reconstruction. 
 
 
 \subsection{Event reconstruction}
 \label{sec:section_3_2_1}
 
-Like discussed in section \ref{sec:section_2_2_4} and illustrated in figure \ref{fig:fig_2_5}, different particles leaves specific signatures in the detector systems of \gls{CMS}. This fact is used in the particle flow algorithm (\gls{PF}) \cite{PF}. The algorithm identifies objects for example electrons and photon from \gls{ECAL} entries or muons from hits in the muon chambers. With linking the information of the different detector system, for example a track in the tracker system and a matching \gls{ECAL} entries from an electron, all particles can be identified one after another.  From the combination of all reconstructed particle higher level objects like jets or \gls{MET} are reconstructed. \\
+Like discussed in section \ref{sec:section_2_2_4} and illustrated in figure \ref{fig:fig_2_5}, different particles leave specific signatures in the detector systems of \gls{CMS}. This fact is used in the particle flow algorithm (\gls{PF}) \cite{PF}. The algorithm identifies objects electrons and photon from \gls{ECAL} entries or muons from hits in the muon chambers. By linking the information of the different detector systems, for example a track in the tracker system and matching \gls{ECAL} entries, all particles can be identified one after another.  From the combination of all reconstructed particle higher level objects like jets or \gls{MET} are reconstructed. \\
 
-To ensure the best possible rate of right identification of the reconstructed particles, the \gls{CMS} collaboration provide multivariate analysis (\gls{MVA}) classifier for the different particles. The classifier are trained to do a binary classification of whether the particles is your wished particle or not, where information of detector systems are feeded into the training, see reference \cite{ERECO} for electrons \gls{MVA} classifier. \\
+To ensure the best possible identification efficiency of the reconstructed particles, the \gls{CMS} collaboration provides multivariate analysis (\gls{MVA}) classifiers for the different particles. The classifiers are trained to identify the particle of interest from other particles, where information of detector systems are fed into the training, see reference \cite{ERECO} for the electron \gls{MVA} classifier. \\
 
-The $\tau$ leptons require more sophisicated methods to reconstruct, because of the short live time and the secondary particles originating from the decay. The \gls{TAUH} are reconstructed with the hadron-plus-strips algorithm \cite{TAURECO}. This algorithm uses information of the tracks and ECAL deposition of the hadrons originating from the decay of the $\tau$ lepton to a charged pion (1-prong), to a charged pion and a neutral pion (1-prong + $\pi^0$) and to three charged pions (3-prong). \\
+The $\tau$ leptons require more sophisticated methods for reconstruction, because of the short lifetime and the decay products of the $\tau$ lepton. The \gls{TAUH} are reconstructed with the hadron-plus-strips algorithm \cite{TAURECO}. This algorithm uses information of the tracks and calorimeter deposition of the hadrons originating from the decay of the $\tau$ lepton to a charged pion (1-prong), to a charged pion and a neutral pion (1-prong + $\pi^0$) and to three charged pions (3-prong). \\
 
-Like for other objects the \gls{CMS} collobaration provides \gls{MVA} classifier for \gls{TAUH} \cite{TAURECO}. But due to reconstruction of the \gls{TAUH} from decay products, it is more prone that other objects (in general electrons/muons/jets) are misidentified as \gls{TAUH}. For this reason three different \gls{MVA} are provided to differentiate \gls{TAUH} and electrons/muons/jets. \\
+As for other objects the \gls{CMS} collaboration provides \gls{MVA} classifier for \gls{TAUH} \cite{TAURECO}. But due to reconstruction of the \gls{TAUH} from decay products, it is more prone that other objects (in general electrons/muons/jets) are misidentified as \gls{TAUH}. For this reason three different \gls{MVA} are provided to differentiate \gls{TAUH} and electrons/muons/jets. \\
 
-Besides $\tau$ leptons, also jets need a sophistaced treatment to be identified from a particles cascasde in the calorimeter systems. Jets are reconstructed using the anti-$k_T$ algorithm \cite{ANTIKT}, which cluster all PF canditates originating from the primary vertex within a cone of \gls{dR} = 0.4. In this analysis jets are required to fulfill \gls{pT}$ > 30$ GeV and \gls{eta}$ < 4.7$ to be identified as a jet. In the analysis, due to the \gls{TTBAR} and its decay into b-quarks, the combined secondary vertex algorithm \cite{CSV} is used, which uses information about track-based lifetime information and the secondary vertex to provide a classifier to identify jets from b-quarks. 
+Besides $\tau$ leptons, also jets need a sophisticated treatment to be identified from a particle cascade in the calorimeter systems. Jets are reconstructed using the anti-$k_T$ algorithm \cite{ANTIKT}, which cluster all \gls{PF} candidates originating from the primary vertex within a cone of \gls{dR} = 0.4. In this analysis jets are required to fulfil \gls{pT} $> 30$ GeV and $|$\gls{eta}$|$ $ < 4.7$ to be identified as a jet. Due to the \gls{TTBAR} and its decay into b-quarks, the combined secondary vertex algorithm \cite{CSV} is used, which uses information about track-based lifetime information and the secondary vertex to provide a classifier to identify jets from b-quarks. 
 
 
 \subsection{Selection criteria}
-\label{sec:sec_3_2_2}
+\label{sec:section_3_2_2}
 
-For the search of \gls{LFV} Z decays, events of interest have a pair of reconstructed electron/muon, electron/tau lepton or muon/tau lepton. On this reconstructed leptons qualatitive requirements are set, to maximize the confidence in the quality of the reconstruction. \\
+For the search of \gls{LFV} in Z boson decays, events of interest contain a pair of reconstructed electron/muon, electron/tau lepton or muon/tau lepton. On these reconstructed leptons qualitative requirements are set, in order to maximize the confidence in the quality of the reconstruction. \\
 
-The first requirement is the trigger decision of the \gls{HLT}, which is discussed in section \ref{sec:section_2_2_3}. There is not only one trigger decision, but many trigger decision made on the object of interest, in this analysis leptons, and on the \gls{pT} and \gls{eta}, which are online reconstucted during the trigger decision. 
+The first requirement is the trigger decision of the \gls{HLT}, which is discussed in section \ref{sec:section_2_2_3}. There is not only one trigger decision, but many trigger decisions are made on the objects of interest. The decision of the trigger is based on the \gls{pT} and \gls{eta} of the particles, which are online reconstructed during the trigger decision. 
 
 \begin{description}
-	\item [$e\mu$:] In this final state two so-called cross triger are used, which selects with event with a pair of electron and muons. The first trigger selects an electron with \gls{pT} $> 23$ GeV and $|$\gls{eta}$|$ $< 2.5$ and a muon with \gls{pT} $> 8$ GeV and $|$\gls{eta}$|$ $< 2.4$ and the second trigger selects an electron with \gls{pT} $> 12$ GeV and $|$\gls{eta}$|$ $< 2.5$ and a muon with \gls{pT} $> 23$ GeV and $|$\gls{eta}$|$ $< 2.4$. Two triggers are used to cover a larger phase space in \gls{pT} of both leptons, and of course only of the trigger has to make a positive decision.
-	\item [$e\tau$:] In this final state on single trigger is used to select events with electrons. The trigger selects an electron with \gls{pT} $> 25$ GeV and $|$\gls{eta}$|$ $< 2.1$
-	\item [$\mu\tau$:] In this final state one single trigger for selecting events with a muon and one cross trigger for selecting a pair of muon and \gls{TAUH}. The single trigger requires a muon with \gls{pT} $> 19$ GeV and $|$\gls{eta}$|$ $< 2.1$ and a \gls{TAUH} with \gls{pT} $> 20$ GeV and $|$\gls{eta}$|$ $< 2.5$ and the single trigger selects muons with \gls{pT} $> 22$ GeV and $|$\gls{eta}$|$ $< 2.1$.
+	\item [$e\mu$:] In this final state two cross triggers are used, which selects events with one electron and one muon. The first trigger selects an electron with \gls{pT} $> 23$ GeV and $|$\gls{eta}$|$ $< 2.5$ and a muon with \gls{pT} $> 8$ GeV and $|$\gls{eta}$|$ $< 2.4$ and the second trigger requires an electron with \gls{pT} $> 12$ GeV and $|$\gls{eta}$|$ $< 2.5$ and a muon with \gls{pT} $> 23$ GeV and $|$\gls{eta}$|$ $< 2.4$. 
+	\item [$e\tau$:] In this final state a single trigger is used to select events with electrons. The trigger requires an electron with \gls{pT} $> 25$ GeV and $|$\gls{eta}$|$ $< 2.1$
+	\item [$\mu\tau$:] In this final state a single trigger for selecting events with a muon and a cross trigger for selecting a pair of muon and \gls{TAUH}. The cross trigger requires a muon with \gls{pT} $> 19$ GeV and $|$\gls{eta}$|$ $< 2.1$ and a \gls{TAUH} with \gls{pT} $> 20$ GeV and $|$\gls{eta}$|$ $< 2.5$ and the single trigger requires muons with \gls{pT} $> 22$ GeV and $|$\gls{eta}$|$ $< 2.1$.
 \end{description}
 
-The second requirement is set on the so-called isolation of the leptons. The isolation quantifies the energy deposition around a reconstructed object in cone defined by a specific value of \gls{dR}, where the energy deposition originating from other particles passing the detector. The definition of isolation is given by
+The second requirement is the isolation of the leptons. The isolation quantifies the energy deposition around a reconstructed object in a cone defined by a specific value of \gls{dR}. The definition of isolation is given by
 
 \begin{equation}
 	\label{eq:eq_3_1}
 	I^{\ell} = \frac{\sum_{\text{charged}} p_{T} + \text{max}(0, \sum_{\text{neutral}} p_{T} - \frac{1}{2}\sum_{\text{charged, PU}} p_{T})}{p_T^{\ell}}  
 \end{equation} 
 
-with $\sum_{\text{charged}} p_{T}$ as sum of the scalar transverse momenta of all charged particles originating from the primary vertex, $\sum_{\text{neutral}} p_{T}$ as sum of the scalar transverse momenta of all neutral particles and $\sum_{\text{charged, PU}} p_{T}$ as sum of the scalar transverse momenta of all charged particles from secondary vertices in a cone of \gls{dR} = 0.4. In this analysis tight isolated lepton are required, which means for each final state: 
+with $\sum_{\text{charged}}$ \gls{pT} as sum of the scalar transverse momenta of all charged particles originating from the primary vertex, $\sum_{\text{neutral}}$ \gls{pT} as sum of the scalar transverse momenta of all neutral particles and $\sum_{\text{charged, PU}}$ \gls{pT} as sum of the scalar transverse momenta of all charged particles from secondary vertices in a cone of \gls{dR} = 0.4. In this analysis tight isolated lepton are required, which means for each final state: 
 
 \begin{description}
-	\item [$e\mu$:] For the electron an isolation of $I^{e} = 0.15$ and for the muon $I^{\mu} = 0.2$ are required. 
-	\item [$e\tau$:]  For the electron an isolation of $I^{e} = 0.10$ is required. For the \gls{TAUH} a \gls{MVA} ID is used for quantifying isolation, which is trained to distinguish between quark/gluon jets. 
-	\item [$\mu\tau$:]  For the muon an isolation of $I^{\mu} = 0.10$ is required. Like in the $e\tau$ final state the \gls{TAUH} has to pass the \gls{MVA} ID for isolation.
+	\item [$e\mu$:] For the electron an isolation of $I^{e} \leq  0.15$ and for the muon $I^{\mu} \leq  0.2$ are required. 
+	\item [$e\tau$:]  For the electron an isolation of $I^{e} \leq  0.10$ is required. For the \gls{TAUH} a \gls{MVA} ID is used for quantifying isolation, which is trained to distinguish between quark/gluon jets. 
+	\item [$\mu\tau$:]  For the muon an isolation of $I^{\mu} \leq 0.10$ is required. Like in the $e\tau$ final state the \gls{TAUH} has to pass the \gls{MVA} ID for isolation.
 \end{description}
 
 
-The third requirement is based on the identification of the particle. To ensure that the object of interest is correctly identified, a offline criteria based on measured quantities of the detectors entries are either used to set cut on this or to train a \gls{MVA} classifier, like mentioned in section \ref{sec:section_3_2_1}. The \gls{CMS} colloaboration provides recommendations for each particle, where different so-called working points for the selections are defined. This range from very loose to very tight, where a tighter working indicates a more trustworthy selection criteria. 
+The third requirement is based on the identification of the particle. To ensure that the object of interest is correctly identified, an offline criteria based on the detectors entries and particles properties are either used to set cuts on this or to train a \gls{MVA} classifier, like mentioned in section \ref{sec:section_3_2_1}. The \gls{CMS} collaboration provides recommendations for each particle, where different so-called working points for the selections are defined. These range from very loose to very tight, where a tighter working indicates a more trustworthy selection, but of course also lead to less events, which are selected. Which working point gives the best balance depends on the analysis, the following list shows the choice for this analysis. 
 
 \begin{description}
-	\item [$e\mu$:] The electron has to pass the tight \gls{MVA} idenfication criteria, the muon has to pass the medium cut based idenfication criteria. 
-	\item [$e\tau$:]  The electron has to pass the tight \gls{MVA} idenfication criteria, the \gls{TAUH} has to pass the tight \gls{MVA} idenfication criteria to be distinguished from electrons and the loose \gls{MVA} idenfication criteria to be distinguished from muons.
-	\item [$\mu\tau$:]  The muons has to pass the medium cut based idenfication criteria, the \gls{TAUH} has to pass the loose \gls{MVA} idenfication criteria to be distinguished from electrons and the tight \gls{MVA} idenfication criteria to be distinguished from muons.
+	\item [$e\mu$:] The electron has to pass the tight \gls{MVA} identification criteria, while the muon has to pass the medium cut based identification criteria. 
+	\item [$e\tau$:]  The electron has to pass the tight \gls{MVA} identification criteria, while the \gls{TAUH} has to pass the tight \gls{MVA} identification criteria to be distinguished from electrons and the loose \gls{MVA} identification criteria to be distinguished from muons.
+	\item [$\mu\tau$:]  The muon has to pass the medium cut based identification criteria, while the \gls{TAUH} has to pass the loose \gls{MVA} identification criteria to be distinguished from electrons and the tight \gls{MVA} identification criteria to be distinguished from muons.
 \end{description}
 
 
 \subsection{Categorization}
 \label{sec:section_3_2_3}
 
-The signal and background processes differ in their kinematics properties, which leads to region in phase space, where the signal events are concentrated, and region, which are background is dominating. This fact can be used in the statistical interpretation of the analysis, see section \ref{kappa}. A so-called categorization of the phase space is applied, which defines different region of interest in the phase space. \\
+The events from signal and background processes differ in their kinematics properties. This fact can be used in the statistical interpretation of the analysis, see section \ref{sec:section_5_2}. A categorization of the phase space is applied, which defines different region of interest. \\
 
-In terms of this analysis the number of jets are of interest. Like discussed in section \ref{sec:section_3_1_2}, the \gls{LFV} signal leads always to leptons with different flavour. In some cases, in the \gls{SM} this are called higher order corrections \cite{Peskin}, the quarks of the initial state can radiate quarks, which in the detector are measured to be jets. The other source of jets in the final state are quarks/gluons coming from the other constituens of the proton which broke during the proton-proton collision. The same argumentation is also true for the \gls{DY} background. This leads to a distribution of measured number of jets, which peaks at zero and decaying with higher number of jets in the final state. In comparison to that, some background have natural jets in their final state. Backgrounds like \gls{TTBAR}, W + jets and \gls{QCD} multijet have by default jets in the final state because of the properties of the interaction or the decay of the final state particles. The described jet distrubtion are shown figure \ref{fig:fig_3_7}. 
+In this analysis the number of jets are of interest. As discussed in section \ref{sec:section_3_1_2}, the \gls{LFV} signal leads always to leptons with different flavour. There are two possible sources of jets for signal events. One source are jets, which are radiated from quarks before their annihilation to the Z boson. The other source of jets in the final state are quarks/gluons coming from the other constituents of the proton. The same argumentation is also true for the \gls{DY} background. This leads to a distribution, where most events have zero jets and the number of jets in events is expected to be smaller for each additional jet. In comparison, some background processes have always jets in their final state. Backgrounds like \gls{TTBAR}, W + jets and \gls{QCD} multijet have jets in the final state because of the properties of the interaction or the decay of the final state particles, as discussed in section \ref{sec:section_3_1_2}. The described jet distributions are shown in figure \ref{fig:fig_3_7}. \\
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.4\textwidth]{plots/em/NumberOfJets.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/et/NumberOfJets.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/mt/NumberOfJets.pdf}
+	\includegraphics[width=0.55\textwidth]{plots/em/NumberOfJets.pdf}
+	\includegraphics[width=0.55\textwidth]{plots/et/NumberOfJets.pdf}
+	\includegraphics[width=0.55\textwidth]{plots/mt/NumberOfJets.pdf}
 
 	\caption[Number of jet distribution of each final state]{Number of jet distribution for the final state $e\mu$, $e\tau$ and $\mu\tau$}
 	\label{fig:fig_3_7}
 \end{figure}
 
-For the categorization a splitting in number of jets multiplizity is applied. Three distingued region in phase space are considered:
+For the categorization a cut on the jets multiplicity is applied. Three distinguished regions in phase space are considered:
 
 \begin{description}
-	\item [Zero Jet category:] Event with number of jets equals to zero 
-	\item [One Jet category:] Event with number of jets equals to one
-	\item [Multi Jet category:] Event with number of jets more than one
+	\item [Zero Jet category:] Event with zero jets
+	\item [One Jet category:] Event with one jet
+	\item [Multi Jet category:] Event with more than one jet
 \end{description}
+
+
+\section{Signal expectation}
+\label{sec:section_3_3}
+
+The analysis uses a model independent approach for modelling the signal. This means no theoretical prediction of the branching ratios $\text{BR}(Z\to\text{LFV})$ is given like in the case of \gls{LFV} induced by neutrino oscillation, see section \ref{sec:section_1_3_2}. For this reason the signal expectation is constructed by using information of previous analyses, as discussed in section \ref{sec:section_1_3_3}. The previous analysis set limits on the branching ratios for \gls{LFV} process $\text{BR}(Z\to\text{LFV})$ in each final state, and using this information the signal expectation in this analysis is  set to be
+
+\begin{equation}
+	\label{eq:eq_3_3}
+	N_{\text{LFV}} = \mathcal{L}_{int} \cdot \sigma(pp\to Z) \cdot \text{BR}(Z\to\text{LFV}), \quad \text{LFV} \in (e\mu, e\tau, \mu\tau)
+\end{equation}
+
+with the integrated luminosity $\mathcal{L}_{int}$ and the production cross section for Z bosons at proton-proton collisions $\sigma(pp\to Z)$. Because the $\text{BR}(Z\to\text{LFV})$ is an upper limit for each final state, $N_{\text{LFV}}$ can be interpreted as maximal number of events, which can be expected. \\
+
+The three possible decays of the Z boson into \gls{LFV} are analysed independently, which means that for only the final state of interest a non-vanishing branching ratio is assumed. For example the analysis of the $e\mu$ final state assumes a $\text{BR}(Z\to e\mu) > 0$ and  $\text{BR}(Z\to e\tau) = \text{BR}(Z\to \mu\tau) = 0$. 
 
 
 \section{Background estimation}
 
-The study of both signal and background processes requires the study of simulation, which can be compared with real data. The simulations of the processes are provided by the \gls{CMS} collaboration and is basically done in three steps. The first is the simulation of the physical process by using a \gls{MC} event generator, for example like madgraph \cite{MADGRAPH}, which generate mother and daugther particles with their four momenta. The second step is the simulation of proton-proton collisions, including the information of the generated particles. In the last step the detector response of \gls{CMS} is simulated by Geant4 \cite{GEANT4} using the proton-proton and the process simulation. \\
+The study of both signal and background processes requires the study of simulations, which can be compared with data. The simulation of the processes are provided by the \gls{CMS} collaboration and are done in three steps. The first is the simulations of the physical process by using a \gls{MC} event generator, for example like Madgraph \cite{MADGRAPH}, which generates mother, daughter particles and their four momenta. The second step is the simulation of proton-proton collisions, including the information of the generated particles. In the last step the detector response of \gls{CMS} is simulated by Geant4 \cite{GEANT4} using the proton-proton and the process simulation. \\
 
-In this simulation the physical expectation for the number of events, given by formula \ref{eq:eq_2_2}, is not included yet. This expectation is calculated in the so-called background estimation, where depending on the process, the theoretical expectation and \gls{MC} simulation is used or data driven methods, using real data in signal free regions to determine backgrounds. 
+In this simulation the physical expectation for the number of events, given by formula \ref{eq:eq_2_2}, is not included yet. This expectation is determined with the background estimation for each process.
 
-\subsection{Background estimated from Monte carlo simulation}
+\subsection{Background estimated from Monte Carlo simulation}
+\label{sec:section_3_4_1}
 
-To determine background from Z boson decays, MC simulation is used and normalized to the cross section and integrated luminosity. It is splitted into two contributions due to different decay modes of the Z. The first contribution is the $Z\to\tau\tau$ background, where $\tau_h$ are matched to generated hadronic taus and electrons/muons are matched generated leptonics taus. The second contribution is the $Z\to\ell\ell$ background, which combines events where $\tau_h$ is matched to a generated electron/muon, and all the rest. Figure \ref{fig:fig_3_8} shows the a plot of the \gls{pT} distribution of both leptons around the $Z\to\tau\tau$ mass peak. \\
+To determine background from Z boson decays, \gls{MC} simulation is used and normalized to the cross section and integrated luminosity according to equation \ref{eq:eq_2_2}. It is split into two contributions due to different decay modes of the Z. The first contribution is the $Z\to\tau\tau$ background, where depending on the decay mode of the $\tau$ lepton, \gls{TAUH} are matched to generated hadronic taus and electrons/muons are matched generated leptonic decaying taus. The second contribution is the $Z\to\ell\ell$ background, which combines events where \gls{TAUH} is matched to a generated electron/muon or not matched at all. \\ 
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.4\textwidth]{plots/em/TransverseMomentum1_ZTTCR.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/em/TransverseMomentum2_ZTTCR.pdf}
-	
-	\includegraphics[width=0.4\textwidth]{plots/et/TransverseMomentum1_ZTTCR.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/et/TransverseMomentum2_ZTTCR.pdf}
+The $t\bar{t}$ and the di-boson background, including all production modes of two vector bosons, top quark in association with a W boson and single top production, is simulated with \gls{MC} and normalized to its cross section and the integrated luminosity. 
 
-	\includegraphics[width=0.4\textwidth]{plots/mt/TransverseMomentum1_ZTTCR.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/mt/TransverseMomentum2_ZTTCR.pdf}
-
-	\caption[\gls{pT} distribution for $Z\to\tau\tau$ control region]{\gls{pT} distribution of both lepton for the final state $e\mu$, $e\tau$ and $\mu\tau$, where only events around the visible mass peak of $Z\to\tau\tau$ are take: 20 GeV $<$ \gls{m_vis} $<$ 60 GeV}
-	\label{fig:fig_3_8}
-\end{figure}
-
-The $t\bar{t}$ and the di-boson background, including all productions modes of two vector bosons, top quark in association with a W boson and single top production, is simulated with MC and normalized to its cross section and the integrated luminosity. Figure \ref{fig:fig_3_9} shows the \gls{pT} distribution of event with two b-tagged jets, which is \gls{TTBAR} dominated.
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.4\textwidth]{plots/em/TransverseMomentum1_TTBARCR.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/em/TransverseMomentum2_TTBARCR.pdf}
-	
-	\includegraphics[width=0.4\textwidth]{plots/et/TransverseMomentum1_TTBARCR.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/et/TransverseMomentum2_TTBARCR.pdf}
-
-	\includegraphics[width=0.4\textwidth]{plots/mt/TransverseMomentum1_TTBARCR.pdf}
-	\includegraphics[width=0.4\textwidth]{plots/mt/TransverseMomentum2_TTBARCR.pdf}
-
-	\caption[\gls{pT} distribution for \gls{TTBAR} control region]{\gls{pT} distribution of both lepton for the final state $e\mu$, $e\tau$ and $\mu\tau$, where only events with two b-tagged jets are considered}
-	\label{fig:fig_3_9}
-\end{figure}
 
 \subsection{Background estimated using data driven methods}
+\label{sec:section_3_4_2}
 
-For the $e\mu$ final state, the $W + \text{jet}$ is a minor background due to the small probability for a jet to be misidentified as an isolated lepton. Because of this reason, in this final state the estimation is done with MC simulation and normalized with cross section and integrated luminosity. The QCD shape is taken from a same-sign (SS) region, where both leptons pass relaxed isolation criterias. The normalization is extrapolated from comparing SS and opposite-sign (OS) regions, where one of the two leptons fullfill $0.3 < I^{\ell} < 0.5$. 
+For the $e\mu$ final state, $W + \text{jets}$ is a minor background due to the small probability for a jet to be misidentified as an isolated lepton. Because of this, in this final state the estimation is done with \gls{MC} simulation and normalized with cross section and integrated luminosity. The \gls{QCD} shape is taken from a region, where both leptons have the same charge (same-sign region) and pass relaxed isolation criteria. The normalization is extrapolated from comparing same-sign (SS) and opposite-sign (OS) regions, where one of the two leptons fulfil $0.3 < I^{\ell} < 0.5$.  \\
 
-In the case of the $e\tau$ / $\mu\tau$ final state, $W + \text{jets}$ normalization and QCD is simultaneously estimated with a data driven method. A schematic overview of the regions used for the estimation are shown in Figure \ref{fig:mt}. The number of events in the oppositite-sign (OS) signal region (SR), which events fullfill $M_T < 50$ GeV (low $M_T$), is calculated with 
+In the case of the $e\tau$ / $\mu\tau$ final state, $W + \text{jets}$ normalization and \gls{QCD} is simultaneously estimated with a data driven method. The number of events in the OS signal region (SR), where events fulfil $M_T < 50$ GeV (low $M_T$), is calculated with 
 
 \begin{equation}
-	W^{\text{low } M_T}_{OS} = (\frac{W^{\text{low } M_T}_{\text{sim. relaxed OS}}}{W^{\text{high } M_T}_{\text{sim. relaxed OS}}}) \cdot W^{\text{high } M_T}_{OS}
+	W^{\text{low } M_T}_{OS} = \Bigg(\frac{W^{\text{low } M_T}_{\text{sim. relaxed OS}}}{W^{\text{high } M_T}_{\text{sim. relaxed OS}}}\Bigg) \cdot W^{\text{high } M_T}_{OS}
 \end{equation}
 
-with $W^{\text{low } M_T}_{\text{sim. relaxed OS}}$ and $W^{\text{high } M_T}_{\text{sim. relaxed OS}}$ as number of events taken from simulation, where relaxed isolation criteria is applied. For the number of events in the OS region in the control region (CR), where events fullfill $M_T > 50$GeV (high $M_T$), is extracted from data using 
+with $W^{\text{low } M_T}_{\text{sim. relaxed OS}}$ and $W^{\text{high } M_T}_{\text{sim. relaxed OS}}$ as number of events taken from simulation, where relaxed isolation criteria is applied. For the number of events in the OS region in the control region (CR), where events fulfil $M_T > 50$GeV (high $M_T$), is extracted from data using 
 
 \begin{equation}
 	W^{\text{high } M_T}_{OS} = \text{data}^{\text{high } M_T}_{OS} - Z^{\text{high } M_T}_{OS} - t\bar{t}^{\text{high } M_T}_{OS} - \text{diboson}^{\text{high } M_T}_{OS} - \text{QCD}^{\text{high } M_T}_{OS}
@@ -445,27 +434,142 @@ with data and all other backgrounds explained in the previous section. The numbe
 \text{QCD}^{\text{high } M_T}_{OS} = \epsilon^{QCD}_{OS/SS} \cdot (\text{data}^{\text{high } M_T}_{SS} - Z^{\text{high } M_T}_{SS} - t\bar{t}^{\text{high } M_T}_{SS} - \text{diboson}^{\text{high } M_T}_{SS} - W^{\text{high } M_T}_{\text{sim. SS}})
 \end{equation}
 
-with data and all other backgrounds explained in the sections before, including simulated $W + \text{jets}$ events, in the SS high $M_T$ CR region. The factor $\epsilon^{QCD}_{OS/SS}$ is an extrapolation from SS to OS region, which is calculated using samples with inverted isolation criteria of the leptons. Using the same extrapolation factor, the distrubtion of QCD in the low $M_T$ signal region is calculated using 
+with simulated $W + \text{jets}$ events, in the SS high $M_T$ CR region. The factor $\epsilon^{QCD}_{OS/SS}$ is an extrapolation from SS to OS region, which is calculated using samples with inverted isolation criteria of the leptons. Using the same extrapolation factor, the distribution of QCD in the low $M_T$ signal region is calculated using 
 
 \begin{equation}
-	\text{QCD}^{\text{low } M_T}_{OS} = \epsilon^{QCD}_{OS/SS} \cdot (\text{data}^{\text{low } M_T}_{SS} - Z^{\text{low } M_T}_{SS} - t\bar{t}^{\text{low } M_T}_{SS} - \text{diboson}^{\text{low } M_T}_{SS} -  (\frac{W^{\text{low } M_T}_{\text{OS}}}{W^{\text{high } M_T}_{\text{sim. OS}}}) \cdot W^{\text{low } M_T}_{\text{SS}})
+	\text{QCD}^{\text{low } M_T}_{OS} = \epsilon^{QCD}_{OS/SS} \cdot (\text{data}^{\text{low } M_T}_{SS} - Z^{\text{low } M_T}_{SS} - t\bar{t}^{\text{low } M_T}_{SS} - \text{diboson}^{\text{low } M_T}_{SS} -  \Bigg(\frac{W^{\text{low } M_T}_{\text{OS}}}{W^{\text{high } M_T}_{\text{sim. OS}}}\Bigg) \cdot W^{\text{low } M_T}_{\text{SS}})
 \end{equation}
 
 
 \subsection{Correction of simulated events}
+\label{sec:section_3_4_3}
 
-Limited power of modelling the pp-interactions, pile up and the detector response leads to discrepancies in the \gls{MC} simulation and real data. To correct such discrepancies, scale factors and kinematic corrections are applied. In general the factors for the corrections are provided by the \gls{CMS} collaboration. \\
+Limited power of modelling the proton-proton-interactions, pile up and the detector response leads to discrepancies between the \gls{MC} simulation and data. To correct such discrepancies, scale factors and kinematic corrections are applied. In general the factors for the corrections are provided by the \gls{CMS} collaboration. \\
 
-Trigger/and idenfitcation of particles shows different efficencies in data and \gls{MC}. With scale factors of binned in \gls{pT} and \gls{eta} this efficiences of \gls{MC} are matched to data. For the idenfication the scales factors depens on the working point of the idenfitcation selection. For the case of the \gls{TAUH}, where extra \gls{MVA} idenfications to discriminate electrons and muons are used, scale factors in bins of \gls{eta} are applied. \\
+Trigger and identification of particles shows different efficiencies in data and \gls{MC}. With scale factors binned in \gls{pT} and \gls{eta}, these efficiencies of \gls{MC} are matched to data. For the identification the scale factors depend on the working point of the identification selection. For the case of the \gls{TAUH}, where extra \gls{MVA} identifications to discriminate electrons and muons are used, scale factors in bins of \gls{eta} are applied. \\
 
-Beside selection efficiences, also correction of the measured energy/momentum has to be applied. In the case of the \gls{TAUH}, the four momenta of the is corrected by -1.8\% in the 1-prong decay mode, by +1.0\% in the 1-prong + $\pi^{0}$ decay mode and by 0.4\% in the 3-prong decay mode. To correct the energy scales of electrons/muons faking a \gls{TAUH} the four momenta of \gls{TAUH}, which are gen matched to an electron or muon, are corrected. For a gen matching to a muons a correction of -0.2\% for the 1-prong decay mode and of +1.5\% for the 1-prong + $\pi^{0}$ decay mode is applied. For a gen matching to an electron a correction of 9.5\% in the 1-prong + $\pi^{0}$ decay mode is applied. \\
+Besides selection efficiencies, corrections on the measured energy/momentum have to be applied. In the case of the \gls{TAUH}, the four momenta is corrected by -1.8\% in the 1-prong decay mode, by +1.0\% in the 1-prong + $\pi^{0}$ decay mode and by 0.4\% in the 3-prong decay mode. To correct the energy scales of electrons/muons faking a \gls{TAUH} the four momentum of \gls{TAUH}, which are matched on generator level to an electron or muon, are corrected. For matched \gls{TAUH} to a muons a correction of -0.2\% for the 1-prong decay mode and of +1.5\% for the 1-prong + $\pi^{0}$ decay mode is applied. For matched \gls{TAUH} to an electron a correction of 9.5\% in the 1-prong + $\pi^{0}$ decay mode is applied. \\
 
-For the jet energy scale by a factorized approach, where scale factors on the jet four momenta are applied. The \gls{MET} is corrected by a Type-I correction, which propagates the jet energy corrections through the calculation of the MET. For the Z boson and top quark, \gls{pT} corrections are applied. \\
+For the jet energy scale factors on the jet four momenta are applied. The \gls{MET} is corrected by a propagating the jet energy corrections through the calculation of the MET. For the Z boson and top quark, \gls{pT} corrections are applied. \\
 
-For $Z\to\tau\tau$ corrections are calculated from a $Z\to\mu\mu$ control sample, where 2D scale factors in \gls{pT} and \gls{m_vis} are calculated like in the in the SM $H\to\tau\tau$ analysis. \cite{CMS-PAS-HIG-16-043}. For the corrections of \gls{TTBAR}, scale factor depending on the generated top \gls{pT} are applied.
+For the $Z\to\tau\tau$ process, scale factors are calculated from a $Z\to\mu\mu$ control sample, where 2D scale factors in \gls{pT} and \gls{m_vis} are calculated like in the SM $H\to\tau\tau$ analysis \cite{SMHTT}. For the corrections of \gls{TTBAR}, scale factors depending on the generated top \gls{pT} are applied.
 
 
-\section{Boosted decision trees}
+\section{Discriminating variable}
+\label{sec:section_3_5}
+
+The goal of the analysis is to find a excess in data, which could indicate \gls{LFV}. To find an excess, which is not covered by statistical/systematic uncertainties of the background simulation, a discriminating variable has to be chosen for the analysis, which separates the signal and background processes. In general two approaches can be studied. The first approach is a cut-based strategy, in which a set of sensitive parameters are chosen, then cuts are applied on these parameters to enhance the signal/background ratio, while keeping enough events for a sufficient statistical analysis. The second approach are the usage \gls{MVA} classifier, as already introduced in the identification of leptons in section \ref{sec:section_3_2_2}. The \gls{MVA} classifier is trained on events, where the classification is already known (signal or background), and then is later applied on events with unknown classification. 
+
+\subsection{Boosted decision tree}
+\label{sec:section_3_5_1}
+
+A boosted decision tree (\gls{BDT}) \cite{BDT} is a continuous binary \gls{MVA} classifier, which can distinguish between two kind of sets, which can be classified. In the case of this analysis, one set is the collection of all backgrounds, and the second set is the \gls{LFV} signal. For each final state independently, a \gls{BDT} classifier is trained to discriminate between the collection of all backgrounds and the signal. \\
+
+The boosted decision tree is an iteration of the many decision trees (\gls{DT}). Figure \ref{fig:fig_3_10} shows the schematic overview which is explained in the following. A set of $N_{events}$ events, where each event $j$ has a event weight $w_{j}$ and a tuple of parameters $x = (x_{1}, ... , x_{i})$ with $i \in \mathbb{N}$, is given as the input of the \gls{DT}. The events have a known labelling, for example background (B) and signal (S). For the set the signal purity is defined as
+
+\begin{equation}
+	\label{eq:eq_3_10}
+	P = \frac{\sum_{j \in (\text{signal events})} w^{j}}{\sum_{j \in [1, N_{events}]} w^{j}}.
+\end{equation}
+
+From the parameter tuple $x$ the parameter $x_{i}$ and the cut value are chosen, which gives the best separation of the samples, which is quantified for example by the gini index 
+
+\begin{equation}
+	\label{eq:eq_3_11}
+	g = \sum_{j \in [1, N_{events}]} w^{j} \cdot P \cdot (1-P).
+\end{equation}
+
+The set is split into two subsets, one having a higher signal purity, while the other subset is higher background purity. On these subsets the same procedure is followed, until the stop condition is hit (maximal number of iterations, minimal numbers of events in a subset, perfect signal/background separation). The events are labelled by the \gls{DT} according the last subset, they land in. This gives a non-continuous binary classification of each event by the \gls{DT}. \\
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/DT.pdf}
+
+	\caption[DT scheme]{Scheme of a generic decision tree, taken from \cite{TMVA}}
+	\label{fig:fig_3_10}
+\end{figure}
+
+
+In the algorithm of the \gls{BDT} $N_{T}$ \gls{DT} are trained and incorrectly classified events are re-weighted. For each decision tree \gls{DT} $k$ the event $j$ has weight $w^{j}_{k}$. After the $k^{\text{th}}$ \gls{DT} training the misidentification probability is calculated with
+
+\begin{equation}
+	\epsilon_{k} = \frac{\sum_{j}^{N_{events}} w^{j} \cdot \text{isMisidentified}(j)}{\sum_{j}^{N_{events}} w^{j}}.
+\end{equation}
+
+For the next \gls{DT} all misclassified events are re-weighted with $w^{j}_{k+1} = w^{j}_{k} \cdot e^{\alpha_{k}}$ with $\alpha_{k} = \beta \cdot \ln{\frac{1-\epsilon_{k}}{\epsilon_{k}}}$ and $\beta$ as learning rate, which gives misclassified events a higher impact of decisions of the set splitting. To quantify the result of the iterations of all \gls{DT}, a continuous parameter, the so-called BDT score, is defined as 
+
+\begin{equation}
+	\label{eq:eq_3_12}
+	T(j) = \frac{1}{\sum_l^{N_T} \alpha_k} \sum_k^{N_T} \alpha_k \cdot T_k(j)
+\end{equation}
+
+with $T_k(j)$ as the binary output of the $k^{\text{th}}$  decision tree. The BDT score is constructed in a way, that is ranges from -1 to 1. In case of the analysis, all signal-like events are bigger than zero and all background-like events are smaller than zero. 
+
+
+\subsection{Training and application}
+\label{sec:section_3_5_2}
+
+The \gls{BDT} algorithm explained in section \ref{sec:section_3_5_1} has a set of free tunable parameters, which is called hyperparameter space. The hyperparameters influence the performance of the training and are tuned to give the best separation between background and signal. In this analysis the choice for the hyperparameters are:
+
+\begin{itemize}
+	\item Number of decisions trees: 800
+	\item Maximal number of iteration in a decision tree: 4
+	\item Minimum number of events in a subset: $0.025 \cdot N_{events}$
+	\item Learning rate: 0.1
+\end{itemize}
+
+The events, on which the training is performed, are taken from the \gls{MC} simulation of all backgrounds and the \gls{LFV} signal that pass the event selection, which is discussed in section \ref{sec:section_3_2_2}. The initial weights are chosen according the physical expectation discussed in the section \ref{sec:section_3_4_1} of the background estimation. For the \gls{QCD} multijet, which is estimated from data driven techniques, no events can be used for the training. Under the assumption, that the \gls{QCD} events in data are labelled as background-like in a \gls{BDT},  the training is performed without \gls{QCD} information. \\
+
+The properties of signal and background processes are reflected in the kinematic distributions of the leptons and the reconstructed Z boson. Because of this, the parameter tuple $x$ includes
+
+\begin{description}
+	\item [Angular correlations:] $\Delta \phi(\ell_1, \ell_2)$, $\Delta \phi(\ell_1, {E}_{T})$, $\Delta \phi({E}_{T}, \ell_2)$, $\Delta \phi(\ell_1, Z)$, $\phi(Z, \ell_2)$, $\Delta \theta(\ell_1, \ell_2)$
+	\item [Lepton properties:] $p_T(\ell_1)$,  $p_T(\ell_2)$, $|d_0(\ell_1)|$, $|d_0(\ell_2)|$, $m_T(\ell_2)$
+	\item [Reconstructed $Z$ boson properties:] $p_T(Z)$, $m_T(Z)$, $E(Z)$, $m_{vis}$, ${E}_{T}$
+\end{description}
+
+The plots of all parameter are shown in appendix \ref{sec:appendix_A}. \\
+
+For the training of the \gls{BDT} the TMVA software package \cite{TMVA} is used. The different final state is trained independently from each other. For each final state, two trainings are performed. The training events of the \gls{MC} simulation are split into even-numbered and odd-numbered event sets. The odd-numbered set is used for the training of the \gls{BDT} classifier, and is then applied on the even-numbered set for data and \gls{MC}, and vice versa. This procedure enables the use of the complete \gls{MC} events without statistical biases. 
+
+\subsection{BDT output}
+\label{sec:section_3_5_3}
+
+The trained \gls{BDT} assigns the \gls{BDT} score to each event according to formula \ref{eq:eq_3_12}. The \gls{BDT} score is then used as the discriminating variable for the statistical analysis described in section \ref{sec:section_5_1}. Figure \ref{fig:fig_3_11} shows the inclusive distribution of the \gls{BDT} score and a unblinded signal-free \gls{BDT} score distribution each final state. \\
+
+ 
+\begin{figure}[htp]
+	\centering
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/BDTScore.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/em/BDTScore_ZTTCR}\par
+	\end{multicols}
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/et/BDTScore.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/et/BDTScore_ZTTCR}\par
+	\end{multicols}	
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/mt/BDTScore.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/mt/BDTScore_ZTTCR}\par
+	\end{multicols}		
+
+	\caption[BDT score]{\gls{BDT} score for the final state $e\mu$, $e\tau$ and $\mu\tau$, one the left inclusive plots with signal, on the right signal free unblinded plots with events \gls{m_vis} $< 60$ GeV and a ratio plot of \gls{MC} and data with the grey band as statistical uncertainty}
+	\label{fig:fig_3_11}
+\end{figure}
+
+For the $e\mu$ final state the \gls{BDT} score shows a well separation of background and signal, for the $e\tau$ and $\mu\tau$ final state the discrimination power of the \gls{BDT} score is lower. The difference in separation power is caused by the challenge of the reconstruction of \gls{TAUH}. In the $e\mu$ final state, both leptons are prompt, well isolated and in events of the signal no neutrinos are involved. This is reflected in the kinematic distributions of this final state, which have already quite separation power by itself. In the $e\tau$ and $\mu\tau$ final state the reconstruction of the \gls{TAUH} is more challenging than the reconstruction of the electron or muon, and gives rise to more uncertainties to deal with. This is reflected in the separation power of distributions of the kinematic parameter, and therefore also in the \gls{BDT} score. 
+
+
+
+
+
+
+
+
+
 
 	
 

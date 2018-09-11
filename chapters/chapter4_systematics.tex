@@ -1,0 +1,58 @@
+\label{sec:section_4}
+
+Each measurement in any experiment is limited by uncertainties, which arise from sources specific to the experiment. In this analysis two kind of sources for uncertainties are existing. The first source is the limited power of the \gls{MC} simulation to describe nature perfectly. The second source is the limits on the precision given by the detector systems of \gls{CMS}. These uncertainties influences the prediction of the simulation in two ways. The first one are normalization effects, which affect the prediction on the number of events, which are expected for a process. The second effect are resolution effects, where the uncertainty on the quantity of the analysis propagates through the analysis, and influences the shapes of the distributions of the quantities of interest. The analysis uses the systematic uncertainties from the SM $H\to\tau\tau$ analysis \cite{SMHTT}, which are also relevant for this analysis, and are discussed in the following and summarized in table \ref{tab:tab_4_1}.
+
+\section{Uncertainties of the event selection}
+
+The uncertainties of the event selection arise from the scale factors, which are discussed in section \ref{sec:section_3_4_3}. The uncertainties of lepton selection criteria, including trigger and identification, are estimated for electrons and muons using the tag and probe method measured in $Z \to ee$ / $Z\to \mu\mu$ data \cite{ERECO, MUONRECO}. The uncertainty is 2 \% per lepton. For the \gls{TAUH} selection criteria, including trigger and identification, the uncertainties are estimated using the tag and probe method measured in $Z \to \tau\tau$ data \cite{TAURECO}. The uncertainty on the trigger efficiency is 2 \% and on the identification is 5 \%.
+
+\section{Uncertainties of the background estimation}
+
+The uncertainties on the background estimation either come from the uncertainties of the parameters going into equation \ref{eq:eq_3_3} for the prediction of expected number of events, or from the fits of the data driven estimation methods.  
+
+The uncertainty on the measured luminosity of the period of 2016 data taken is estimated to be 2.5\% \cite{LUMI}. For the $Z\to\tau\tau$ background, due to the correction of the yield and background using $Z\to \mu\mu$ data, an uncertainty on the estimation is set to 10\%. The uncertainties from the yields of single top and di-boson production are estimated to be 5\% \cite{singleT} \cite{VV}. In the $e\mu$ final state, in which $W +jets$ is estimated from simulation, the normalization uncertainty arises from misidentification rates of jets to electrons/muons and is set to be 20\%. For the $e\tau$, $\mu\tau$ final state, the uncertainty on the normalization comes from the extrapolation from the same-sign to opposite-sign region and is accounted for 5-10\%. For the \gls{QCD} background, in the $e\mu$ final state the uncertainty on normalization arises from the extrapolation of the same-sign to opposite-sign region and is set to be 10-20\%. For the $e\tau$/$\mu\tau$ final state the uncertainty on the extrapolation is 20\%. 
+
+\section{Uncertainty of the energy scale}
+
+The measurement of the energy is limited by the resolution of the detector subsystem and affects the reconstruction of the physical objects. \\
+
+The uncertainty on the energy scale of the electron depends on the position in the detector (barrel/endcap) and is estimated to be 1-2.5\%. With 0.2\% the muon energy scale uncertainty is negligible small and not considered. Not depending on the decay mode of the hadronic $\tau$, the uncertainty on the energy scale is estimated to be 1.2\%. The uncertainties on the jet energy scale are dependent on \gls{eta} and \gls{pT}. Uncertainties on the $E_T^{miss}$ scale \cite{METRECO} arise from unclustered energy entries in the calorimeters. Also jet energy scale uncertainties, which affect directly the $E_T^{miss}$ scale are taken into account. The value of the uncertainty is dependent on \gls{pT} and \gls{eta}. Uncertainties arising from the energy scale of leptons faking a hadronic $\tau$ are estimated to be 1-2.5\%.
+
+\section{Uncertainty related to $\tau$ leptons}
+
+Uncertainties on the reconstruction of the $\tau$ leptons arise from the misidenfication rates of \gls{TAUH} and the efficiency of the reconstructed decay modes. For $Z\to ee$ and $Z\to \mu\mu$ processes, in which one of the leptons is misidentified as a \gls{TAUH}, a rate uncertainty of 25/12\% is considered. For jets from quarks or gluons, which are misidentified as \gls{TAUH}, a \gls{pT} dependent rate uncertainty of 20 \% per 100 GeV \gls{pT} is used \cite{TAURECO}. Uncertainties on the efficiency on identification and reconstruction of a specific hadronic decay mode of the \gls{TAUH} are set to be 3\%.
+
+
+\begin{table}[hbtp]
+	\centering
+	\caption[Systematic uncertainties]{Sources and values of normalization uncertainties in the first part of the table, the shape uncertainties in the second of the table}
+	
+	\label{tab:tab_4_1}
+		\begin{tabular}{l|l|l}
+		Uncertainty                                & Value in \%             & relevant for final state   \\ \hline
+		$e$ identification                             & 2                   & \begin{tabular}{lll} $e\mu$ & $e\tau$  &  \end{tabular}\\
+		$\mu$ identification                     & 2                       &   \begin{tabular}{lll} $e\mu$ & & $\quad \mu\tau$ \end{tabular}        \\
+		$\tau$ idenfication                        & 5                       & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular} \\
+		$e$ trigger                                  & 2                       & \begin{tabular}{lll} $e\mu$ & $e\tau$  &  \end{tabular}        \\
+		$\mu$ trigger                              & 2                       & \begin{tabular}{lll} $e\mu$ & $e\tau$  &  \end{tabular}           \\
+		$\tau$ trigger                             & 5                       & \begin{tabular}{lll} $e\mu$ & &  \end{tabular}        \\
+		$W + \text{jets}$  normalization           & 20                      & \begin{tabular}{lll} $e\mu$ & $e\tau$  &  \end{tabular}                    \\
+		$W + \text{jets}$ extrapolation            & 10                      & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}        \\
+		QCD normalization                          & 10-20                   & \begin{tabular}{lll} $e\mu$ & &  \end{tabular}                    \\
+		QCD extrapolation                          & $20$                    & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}       \\
+		Diboson normalitzation                     & 5                       &  \begin{tabular}{lll} $e\mu$ & $e\tau$ & $\mu\tau$ \end{tabular} \\
+		$Z\to\tau\tau/\ell\ell$ normalization      & 7                       &\begin{tabular}{lll} $e\mu$ & $e\tau$ & $\mu\tau$ \end{tabular} \\
+		$t\bar{t}$ normalization                   & 5                       &\begin{tabular}{lll} $e\mu$ & $e\tau$ & $\mu\tau$ \end{tabular}\\ 
+		Luminosity                                 & 2.5                     & \begin{tabular}{lll} $e\mu$ & $e\tau$ & $\mu\tau$ \end{tabular}\\ \hline \hline
+		$e$ energy scale                           & 1-2.5                   &\begin{tabular}{lll} $e\mu$ & $e\tau$  &  \end{tabular}           \\
+		$\tau$ energy scale                        & 1.2                     & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}       \\
+		Jet energy scale                           & \gls{pT}, \gls{eta} dependent &\begin{tabular}{lll} $e\mu$ & $e\tau$ & $\mu\tau$ \end{tabular} \\
+		$p_{T}^{miss}$ energy scale                & \gls{pT}, \gls{eta} dependent & \begin{tabular}{lll} $e\mu$ & $e\tau$ & $\mu\tau$ \end{tabular} \\
+		$e$ misidentified as $\tau$ energy scale     & 3                       &  \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}      \\
+		$\mu$ misidentified as $\tau$ energy scale & 1.3                     & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}     \\
+		$e$ misidentified as $\tau$ rate              & 20                      &  \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}        \\
+		$\mu$ misidentified as $\tau$ rate          & 25                      & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}        \\
+		Jet misidentified as $\tau$ rate           & 20                      & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}        \\
+		$\tau$ decay mode reconstruction           & 3                       & \begin{tabular}{lll} $ $ & \quad $e\tau$& $\mu\tau$ \end{tabular}   \\    
+	\end{tabular}
+\end{table}

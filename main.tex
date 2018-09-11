@@ -6,6 +6,9 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{url}
+\usepackage{multicol}
+\usepackage{amsfonts}
+\usepackage[]{appendix}
 
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows}
@@ -29,11 +32,32 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
-\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
-\fancyhead[LO, RE]{\thesection~ \rightmark}
-\fancyhead[RO,LE]{Chapter \thechapter}
-\fancyfoot[C]{\thepage}
+	\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+	\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+	\fancyhead[LO, RE]{\thesection~ \rightmark}
+	\fancyhead[RO,LE]{Chapter \thechapter}
+	\fancyfoot[C]{\thepage}
+
+\fancypagestyle{appendix}{
+	\fancyhf{}
+	\fancyhead[RO,LE]{Appendix \thechapter}
+	\fancyfoot[C]{\thepage}
+}
+
+\fancypagestyle{acronymns}{
+	\fancyhf{}
+	\fancyhead[RO,LE]{Acronyms}
+	\fancyfoot[C]{\thepage}
+}
+
+\fancypagestyle{bibliography}{
+	\fancyhf{}
+	\fancyhead[RO,LE]{Bibliography}
+	\fancyfoot[C]{\thepage}
+}
+
+
+
 
 \usepackage[acronym, nopostdot, toc, nonumberlist]{glossaries}
 
@@ -50,9 +74,6 @@
 
 \input{chapters/titlepage.tex}
 \clearpage{\pagestyle{empty}\cleardoublepage}
-
-%\chapter*{Abstract}
-%\input{chapters/abstract.tex}
 
 \tableofcontents
 \thispagestyle{empty}
@@ -80,9 +101,28 @@
 \input{chapters/chapter3_analysis.tex}
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
-\printglossary[type=formulas]
-\printglossary[type=\acronymtype]
+\chapter{Systematic uncertainties}
+\input{chapters/chapter4_systematics.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 
+\chapter{Statistical analysis and results}
+\input{chapters/chapter5_statistic.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\chapter{Conclusion and outlook}
+\input{chapters/chapter6_conclusion.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\begin{appendices}
+	\chapter{Input Parameter of the BDT}
+	\pagestyle{appendix}
+	\input{chapters/appendix1_BDTinputs.tex}
+
+\end{appendices}
+
+\printglossaries
+
+\pagestyle{bibliography}
 \bibliographystyle{packages/bibstyle.bst}
 \bibliography{bibliography.bib}  
 \addcontentsline{toc}{chapter}{Bibliography}
