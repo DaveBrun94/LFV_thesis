@@ -8,6 +8,7 @@
 \usepackage{url}
 \usepackage{multicol}
 \usepackage{amsfonts}
+\usepackage{pdfpages}
 \usepackage[]{appendix}
 
 \usepackage{tikz}
@@ -44,7 +45,7 @@
 	\fancyfoot[C]{\thepage}
 }
 
-\fancypagestyle{acronymns}{
+\fancypagestyle{acronyms}{
 	\fancyhf{}
 	\fancyhead[RO,LE]{Acronyms}
 	\fancyfoot[C]{\thepage}
@@ -56,15 +57,16 @@
 	\fancyfoot[C]{\thepage}
 }
 
-
+\fancypagestyle{chapter}{
+	\fancyhead[RO,LE]{Chapter \thechapter}
+	\fancyfoot[C]{\thepage}
+}
 
 
 \usepackage[acronym, nopostdot, toc, nonumberlist]{glossaries}
 
-\newglossary[for]{formulas}{forin}{forout}{Formulas}
 \makeglossaries
 \input{chapters/acronyms.tex}
-\input{chapters/formulas.tex}
 \glsaddall
 \glsunsetall
 
@@ -73,6 +75,10 @@
 \begin{document}
 
 \input{chapters/titlepage.tex}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\chapter*{Abstract}
+\input{chapters/abstract.tex}
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
 \tableofcontents
@@ -114,17 +120,29 @@
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
 \begin{appendices}
-	\chapter{Input Parameter of the BDT}
 	\pagestyle{appendix}
+	\chapter{Input Parameter of the BDT}
 	\input{chapters/appendix1_BDTinputs.tex}
+	\clearpage{\pagestyle{empty}\cleardoublepage}
+
+	\pagestyle{appendix}
+	\chapter{Input distribution for the statistical analysis}
+	\input{chapters/appendix1_prepostplots.tex}
+	\clearpage{\pagestyle{empty}\cleardoublepage}
+
+	\pagestyle{acronyms}
+	\printglossary[type=\acronymtype]
+	\clearpage{\pagestyle{empty}\cleardoublepage}
+
+	\pagestyle{bibliography}
+	\bibliographystyle{packages/bibstyle.bst}
+	\bibliography{bibliography.bib}  	
+	\addcontentsline{toc}{chapter}{Bibliography}
+	\clearpage{\pagestyle{empty}\cleardoublepage}
 
 \end{appendices}
 
-\printglossaries
+\includepdf[pages=-]{chapters/Formular_Eidesstattliche+Versicherung_neu.pdf}
 
-\pagestyle{bibliography}
-\bibliographystyle{packages/bibstyle.bst}
-\bibliography{bibliography.bib}  
-\addcontentsline{toc}{chapter}{Bibliography}
 
 \end{document}

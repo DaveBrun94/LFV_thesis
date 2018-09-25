@@ -7,7 +7,7 @@ The measured value of a physical quantity is a random variable, which distributi
 
 \begin{equation}
 	\label{eq:eq_5_1}
-	\mathcal{L}(\text{data} | \mu, \vec{\theta}) = \Pi_{i} \frac{(\mu s_i+ b_i)^{n_i}}{n_i!} e^{-\mu s_i +b_i} \cdot p(\vec{\theta_i}).
+	\mathcal{L}(\text{data} | \mu, \vec{\theta}) = \Pi_{i} \frac{(\mu s_i+ b_i)^{n_i}}{n_i!} e^{-\mu s_i +b_i} \cdot p_i(\vec{\theta}).
 \end{equation}
 
 The first term is the Poisson distribution, where the expected bin content $i$ is parametrized with $s$ signal events and $b$ background events and a floating signal strength parameter $\mu$. This signal strength is $\mu = 0$ for the background hypothesis and $\mu>0$ for the signal + background hypothesis. Systematic uncertainties are parametrized by the floating parameter vector $\vec{\theta}$ and are described by the prior function $p$.  \\
@@ -38,7 +38,42 @@ and can used for the evaluation of the hypotheses. For a given $\mu$, demanding 
 \section{Interpretation of the analysis}
 \label{sec:section_5_2}
 
-In this analysis the \gls{BDT} score, which is discussed in section \ref{sec:section_3_5}, is used as the discriminating variable for the counting experiment. The \gls{BDT} score is analyzed in bins of three categories, which are described in section \ref{sec:section_3_2_3}. As nuisance parameter $\vec{\theta}$ the systematic uncertainties discussed in section \ref{sec:section_4} are used.\\
+In this analysis the \gls{BDT} score, which is discussed in section \ref{sec:section_3_5}, is used as the discriminating variable for the counting experiment. The \gls{BDT} score is analyzed in bins of three signal categories and two background control regions, which are described in section \ref{sec:section_3_2_3}. As nuisance parameter $\vec{\theta}$ the systematic uncertainties discussed in section \ref{sec:section_4} are used. Figure \ref{fig:FITS} shows the input distribution for each category for the $e\mu$ final state before and after the maximum likelihood fit. In appendix \ref{sec:appendix_B} the input distribution for the $e\tau$ and $\mu\tau$ final state are shown. \\
+
+\begin{figure}[htp]
+	\centering
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/DY_CR_prefit.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/em/DY_CR_postfit.pdf}\par
+	\end{multicols}
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/TT_CR_prefit.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/em/TT_CR_postfit.pdf}\par
+	\end{multicols}	
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/ZeroJet_prefit.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/em/ZeroJet_postfit.pdf}\par
+	\end{multicols}	
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/OneJet_prefit.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/em/OneJet_postfit.pdf}\par
+	\end{multicols}
+
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/MultiJet_prefit.pdf}\par 
+		\includegraphics[width=\linewidth]{plots/em/MultiJet_postfit.pdf}\par
+	\end{multicols}		
+
+	\caption[BDT score]{BDT score for the $e\mu$ final state on the left before the maximum likelihood fit and on the right after the fit. Shown are the \gls{DY} and \gls{TTBAR} control region and the three jet signal categories from zero jet category to multi-jet category. The data shown in the plot is a asimov data set, this is the reason for the perfect data/MC agreement}
+	\label{fig:FITS}
+\end{figure}
 
 The analysis is interpreted in terms of the expected limit on the signal strength $\mu_{exp}$. The calculation of $\mu_{exp}$ follows the description of section \ref{sec:section_5_1} for $\mu_{CL_s = 0.05}$, but instead of evaluating data events, an Asimov data set \cite{ASIMOV} is used. The Asimov data set is a toy data set generated with the model expectation for a given $\mu$ and the nuisance parameter $\vec{\theta}$. In this case the Asimov data set is generated for the background-only hypothesis with $\mu = 0$. The expected limit quantifies the power of the analysis of setting the constraint on the signal strength, if the background only hypotheses is realized. \\
 
@@ -56,22 +91,43 @@ This relation can now be evaluated to judge the sensitivity of the analysis comp
 
 The results of this analysis are given in terms of expected limits on the branching ratio $\text{BR}(Z\to\text{LFV})$ for each final state. \\
 
-The figure \ref{fig:fig_5_1} shows the excepted limits in each category and the combination of all categories. Generally the sensitivity increases for lower jet multiplicity. This is expected, because as shown in the distribution in figure \ref{fig:fig_3_7}, the signal to background ratio gets worse for higher jet multiplicity. In the $e\mu$ final state the change in sensitivity for each category in comparison to the $e\tau$ and $\mu\tau$ final state can be explained with the dominant $t\bar{t}$ background in the multi-jet category for $e\mu$. \\
+The figure \ref{fig:fig_5_1} shows the excepted limits in each category and the combination of all categories. Generally the sensitivity increases for lower jet multiplicity. This is expected, because as shown in the distribution in figure \ref{fig:NJET}, the signal to background ratio gets worse for higher jet multiplicity. In the $e\mu$ final state the change in sensitivity for each category in comparison to the $e\tau$ and $\mu\tau$ final state can be explained with the dominant $t\bar{t}$ background in the multi-jet category for $e\mu$. \\
 
-Also the latest observed limit is shown in comparison to the combined expected limit of this analysis. In the $e\mu$ final state the expected limits give a three times better constraint on the branching ratio than the latest observed limit. And because the latest observed limits lie far above the uncertainty bands of the expected limit of this analysis, a possible excess due to a \gls{LFV} signal could be measured. This gain in sensitivity is expected, because the latest observed limit was measured during the \gls{CMS} Run I with a lower integrated luminosity of $\mathcal{L}_{int} = 19.8$ fb$^{-1}$ compared to the integrated $\mathcal{L}_{int} = 36.9$ fb$^{-1}$ of this analysis. For the $e\tau$ and $\mu\tau$ final state the expected limits on the branching are almost as good, respectively as good as the constraint given by previous analysis. That the limits are not better like in the $e\mu$ final state, can be explained by the fact, that the latest observed limits in this final state were measured with data of the electron-positron collider \gls{LEP}. In an electron-positron collider the initial state of all processes is known, in the case of proton-proton collisions \gls{PDF} have to be used as described in section \ref{sec:section_2_1_2}. With leptons as colliding objects, the \gls{QCD} multi-jet background was not an issue at \gls{LEP}, which gives a much clearer background compared to proton-proton collider. The analysis of the \gls{TAUH} is therefore much more challenging at \gls{LHC}. 
+Also the latest observed limit is shown in comparison to the combined expected limit of this analysis. In the $e\mu$ final state the expected limits give a three times better constraint on the branching ratio than the latest observed limit. And because the latest observed limits lie far above the uncertainty bands of the expected limit of this analysis, a possible excess due to a \gls{LFV} signal could be measured. This gain in sensitivity is expected, because the latest observed limit was measured during the \gls{CMS} Run I with a lower integrated luminosity of $\mathcal{L}_{int} = 19.8$ fb$^{-1}$ compared to the integrated $\mathcal{L}_{int} = 35.9$ fb$^{-1}$ of this analysis. For the $e\tau$ and $\mu\tau$ final state the expected limits on the branching are almost as good, respectively as good as the constraint given by previous analysis. That the limits are not better like in the $e\mu$ final state, can be explained by the fact, that the latest observed limits in this final state were measured with data of the electron-positron collider \gls{LEP}. In an electron-positron collider the initial state of all processes is known, in the case of proton-proton collisions \gls{PDF} have to be used as described in section \ref{sec:section_2_1_2}. With leptons as colliding objects, the \gls{QCD} multi-jet background was not an issue at \gls{LEP}, which gives a much clearer background compared to proton-proton collider. The analysis of the \gls{TAUH} is therefore much more challenging at \gls{LHC}. 
+
+\newpage
+
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.6\textwidth]{plots/em/limits.pdf}
-	\includegraphics[width=0.6\textwidth]{plots/et/limits.pdf}
-	\includegraphics[width=0.6\textwidth]{plots/mt/limits.pdf}
+		
+	\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{plots/em/limits.pdf}
+		\includegraphics[width=\linewidth]{plots/et/limits.pdf}
+	\end{multicols}
+
+	\includegraphics[width=0.5\textwidth]{plots/mt/limits.pdf}
 
 	\caption[Expected limits on the branching ratios]{Expected limits on the branching ratio $\text{BR}(Z\to\text{LFV})$ for each final state. The limits are given for all three categories and the combination of all of them, together with the one/two sigma uncertainty.}
 	\label{fig:fig_5_1}
+
+
 \end{figure}
 
-
-
+\begin{table}[htp]
+	\centering
+	\caption[Expected limits on the branching ratio]{Expected limits on the branching ratio for each final state, signal category and the combination of all signal categories}
+	\label{tab:tab_1_2}
+        \begin{tabular}{|l|l|l|l|}
+        \hline
+		& $\text{BR}(Z\to e\mu) \cdot 10^{-7}$ & $\text{BR}(Z\to e\tau) \cdot 10^{-5}$ & $\text{BR}(Z\to\mu\tau) \cdot 10^{-5}$ \\ \hline
+		Old observed  & 7.3  (CMS)	& 0.98      (LEP) & 1.2   (LEP)               \\ \hline
+		Zero Jet      & 2.96 		& 4.63 		& 3.07                  \\ \hline
+		One Jet      & 4.75  		& 4.60		& 3.35                  \\ \hline
+		Multi Jet     & 27.78 		& 7.64 		& 4.35              \\ \hline
+		combined     & 2.41 		& 2.25 		& 0.86                  \\ \hline
+	\end{tabular}
+\end{table}
 
 
 
