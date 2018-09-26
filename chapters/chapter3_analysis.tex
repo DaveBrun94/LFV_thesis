@@ -1,5 +1,4 @@
-The goal of the analysis is to search for a direct indication of \gls{LFV} in the decay of Z bosons using data from proton-proton collisions measured at \gls{CMS}. Two kinds of process have to be analyzed. The first process is the signal process of the \gls{LFV} decaying Z boson. The second process are background processes of the \gls{SM} leaving the same final state particles as the signal process. To study the differences of signal and background, both are simulated using Monte Carlo simulations (\gls{MC}). Including statistical and systematic uncertainties arising from the measurement, statistical methods are used to evaluate the simulation in comparison to data. 
-
+The goal of the analysis is to search for \gls{LFV} in the decay of Z bosons using data from proton-proton collisions measured at \gls{CMS}. Two kinds of processes have to be analyzed. The first process is the signal process of the \gls{LFV} decaying Z boson. The second processes are backgrounds of the \gls{SM} leaving the same final state particles as the signal process. To study the differences of signal and background, both are simulated using Monte Carlo techniques (\gls{MC}). Including statistical and systematic uncertainties arising from the measurement, statistical methods are used to search for a signal.
 
 \section{Signal and background processes}
 
@@ -13,7 +12,7 @@ To violate lepton flavour, the individual sum of each lepton flavour in initial 
 	\sum_{n \text{ initial state particle}} f_{n} \neq  \sum_{n \text{ final state particle}} f_{n}
 \end{equation}
 
-In the case of a Z boson, produced via quark annihilation in a proton proton collider, three possible configurations fulfil the condition. The direct decay of a Z boson into an electron and a muon, referred to as $e\mu$ final state, into an electron and a $\tau$ lepton, referred to as $e\tau$ final state, or into a muon and a $\tau$ lepton, referred to as $\mu\tau$ final state, violates lepton flavour. The feynman diagrams of these processes are shown in figure \ref{fig:fig_3_1}. \\
+In the case of a Z boson, produced via quark antiquark annihilation in a proton proton collider, three possible decay channels fulfil the condition. The direct decay of a Z boson into an electron and a muon, referred to as $e\mu$ final state, into an electron and a $\tau$ lepton, referred to as $e\tau$ final state, or into a muon and a $\tau$ lepton, referred to as $\mu\tau$ final state, violates lepton flavour. The Feynman diagrams of these processes are shown in figure \ref{fig:fig_3_1}. \\
 
 \begin{figure}[htp]
 	\centering
@@ -74,16 +73,16 @@ In the case of a Z boson, produced via quark annihilation in a proton proton col
 
 \end{figure}
 
-The $\tau$ lepton \cite{TAU} has a special role in comparison to electrons or muons. Due to the mean life time of 2.9$\cdot 10^{-13}$ seconds the $\tau$ lepton decays after a flight distance of a few micrometers. The $\tau$ lepton can decay leptonically with a branching ratio of $\text{BR}(\tau \to l\nu_{\tau}\nu_{l}) = 0.34$ or hadronically with a branching ratio of $\text{BR}(\tau \to \nu_{\tau} + \text{hadrons}) = 0.66$. Because of the high branching ratio of the hadronic decaying $\tau$ leptons (\gls{TAUH}), only this type of decay is considered in the content of the analysis. The \gls{TAUH} are reconstructed from jets, which originate from the hadrons of the $\tau$ decay. 
+The $\tau$ lepton \cite{TAU} is different in comparison to electrons or muons. Due to the mean life time of 2.9$\cdot 10^{-13}$ seconds, it decays after a flight distance of a few millimetres. In the tracker and calorimeters only the decay products are measured. The $\tau$ lepton can decay leptonically with a branching ratio of $\text{BR}(\tau \to l\nu_{\tau}\nu_{l}) = 0.34$ or hadronically with a branching ratio of $\text{BR}(\tau \to \nu_{\tau} + \text{hadrons}) = 0.66$. Because of the high branching ratio of the hadronic decaying $\tau$ leptons (\gls{TAUH}), only this type of decay is considered in the analysis. The \gls{TAUH} are reconstructed from jets, which originate from the hadrons of the $\tau$ decay. 
 
 \subsection{Background processes}
 \label{sec:section_3_1_2}
 
-Background processes have the same particles in the final state as the \gls{LFV}, but they originate from leptonic/semi-leptonic decays of the mother particles or from misidentification of the particles. This leads to differences in kinematic distributions, different secondary vertices and/or additional particles in the final state beside the two leptons. \\
+Background processes have the same particles in the final state as the \gls{LFV} processes, but they originate from \gls{SM} processes or from misidentification of the particles. Differences in kinematic distributions, secondary vertices and/or additional particles in the final state beside the two leptons allow to discriminate them from \gls{LFV} processes. \\
 
-\subsection*{Drell Yan}
+\subsection*{Drell Yan background}
 
-The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ process, both $\tau$ leptons decays leptonically into an electron, a muon and four neutrinos, or one $\tau$ lepton decays leptonically into a lepton and the other one decays hadronically with three neutrinos. The leptons from the $\tau$ lepton decays originate from secondary vertices and have different kinematic properties in comparison to the leptons originating from \gls{LFV}. Due to the neutrinos, which carries away the momenta undetected, this process will have in general more \gls{MET} in the event compared to the \gls{LFV} process. Figure \ref{fig:fig_3_2} shows the Feynman diagram of the leptonic decay chain. Besides the $Z\to\tau\tau$ process, the second \gls{DY} process is $Z\to\ell\ell$ with $l \in (e, \mu$), where one of the leptons $\ell$ has a misidentified lepton flavour. In this case the kinematic properties are quite similar to the \gls{LFV} process, because the lepton also originate from the $Z$ boson, and have no secondary vertices or neutrinos. \\
+The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ process, when both $\tau$ leptons decay leptonically into an electron, a muon and four neutrinos, or one $\tau$ lepton decays into a lepton and the other one decays hadronically with three neutrinos. The electrons and muons from the $\tau$ lepton decays originate from secondary vertices. Due to the neutrinos, which carries away the momenta undetected, these events will have in general more \gls{MET}. Figure \ref{fig:fig_3_2} shows the Feynman diagram of the leptonic decay chain. Besides the $Z\to\tau\tau$ process, the second \gls{DY} process is $Z\to\ell\ell$ with $l \in (e, \mu$), where one of the leptons $\ell$ has a misidentified lepton flavour. In this case the kinematic properties are quite similar to the \gls{LFV} process, because the lepton also originate from the $Z$ boson, and there are no secondary vertices or neutrinos. \\
 
 
 \begin{figure}[htp]
@@ -136,7 +135,7 @@ The main irreducible background is the Drell-Yan (\gls{DY}) $Z\to\tau\tau$ proce
 
 \subsection*{Top/anti-top production}
 
-One of the other backgrounds is the top/anti-top production (\gls{TTBAR}), in which the top pair decays into leptons, b-quarks and neutrinos. Figure \ref{fig:fig_3_3} shows the Feynman diagram of the leptonic decay chain. Like in the $Z\to\tau\tau$ process the leptons originate from secondary vertices and have different kinematic properties in comparison to the signal. \\
+In the top/anti-top production (\gls{TTBAR}), the top pair decays into leptons, b-quarks and neutrinos. Figure \ref{fig:fig_3_3} shows the Feynman diagram of the leptonic decay chain. Like in the $Z\to\tau\tau$ process the leptons originate from secondary vertices and have different kinematic properties in comparison to the signal. \\
 
 
 \begin{figure}[htp]
@@ -189,7 +188,7 @@ One of the other backgrounds is the top/anti-top production (\gls{TTBAR}), in wh
 
 \subsection*{Di-boson}
 
-Besides the decay of fermions like the $\tau$ leptons and the tops, also the vector boson can decay leptonically. The possible vector bosons pairs are $ZZ$/$WW$/$WZ$. Figure \ref{fig:fig_3_4} shows the Feynman diagram of vector boson production. For the $WW$ pair, the $W$ bosons decay into two leptons with two neutrinos, for the $ZZ$ pair the Z bosons decay into four leptons, where two leptons are not identified correctly, and for the $WZ$ pair the bosons decay into three leptons and a neutrino, there one of the leptons is not identified correctly. \\
+Besides the decay of fermions like the $\tau$ leptons and the tops, also the vector boson can decay leptonically. The possible vector bosons pairs are $ZZ$/$WW$/$WZ$. Figure \ref{fig:fig_3_4} shows the Feynman diagram of vector boson production. For the $WW$ pair, the $W$ bosons decay into two leptons with two neutrinos, for the $ZZ$ pair the Z bosons decay into four leptons, where two leptons are either not identified correctly or are outside the acceptance of the detector, and for the $WZ$ pair the bosons decay into three leptons and a neutrino, one of the leptons is not identified. \\
 
 
 \begin{figure}[htp]
@@ -228,7 +227,7 @@ Besides the decay of fermions like the $\tau$ leptons and the tops, also the vec
 
 \subsection*{W + jets and \gls{QCD}}
 
-On the other hand processes exist, in which the end state particles are not identified correctly, like discussed for the $Z\to\ell\ell$ process. One of the processes is the single $W$ boson production in association with a quark, as seen in figure \ref{fig:fig_3_5}. The $W$ boson decays leptonically, but the quark jet is misidentified as a lepton or a \gls{TAUH}. The other process are \gls{QCD} multijet processes, which are the result of the hard interaction of the partons from the protons. These processes lead to quarks/gluons in the final state, which jets are then misidentified as leptons. Figure  \ref{fig:fig_3_6} shows two possible Feynman diagrams contributing to the \gls{QCD} background. \\
+There are in addition processes, in which the end state particles are not identified correctly, like discussed for the $Z\to\ell\ell$ process. One of the processes is the single $W$ boson production in association with a quark, as seen in figure \ref{fig:fig_3_5}. The $W$ boson decays leptonically, but the quark jet is misidentified as a lepton or a \gls{TAUH}. The other process are \gls{QCD} multijet final states, which are the result of the hard interaction of the partons from the protons. These processes lead to quark and gluon jets misidentified as leptons. Figure \ref{fig:fig_3_6} shows two possible Feynman diagrams contributing to the \gls{QCD} background. \\
 
 \begin{figure}[htp]
 	\centering
@@ -301,31 +300,31 @@ On the other hand processes exist, in which the end state particles are not iden
 \section{Event selection}
 \label{sec:section_3_2}
 
-From all events, which are recorded by \gls{CMS}, only a fraction of them are particularly interesting regarding the search for \gls{LFV}. The search for \gls{LFV} requires events having leptons with different flavour, which are well reconstructed and isolated. Because of this, an analysis specific event selection is performed. This selection is divided into two steps. The first step is the reconstruction/identification of the objects, where the raw detector information is evaluated with specific software tools. The second step is to select the reconstructed objects of interest in specific events and to set criteria in regard to the quality of reconstruction. 
+From all events, which are recorded by \gls{CMS}, only a fraction is particularly interesting for the search for \gls{LFV}. The search for \gls{LFV} requires events having leptons with different flavour, which are well reconstructed and isolated. Because of this, an analysis specific event selection is performed. This selection is divided into two steps. The first step is the reconstruction/identification of the objects, where the raw detector information is evaluated with specific software tools. The second step is to select the reconstructed objects of interest in specific events and to set requirements on the quality of reconstruction. 
 
 
 \subsection{Event reconstruction}
 \label{sec:section_3_2_1}
 
-Like discussed in section \ref{sec:section_2_2_4} and illustrated in figure \ref{fig:fig_2_5}, different particles leave specific signatures in the detector systems of \gls{CMS}. This fact is used in the particle flow algorithm (\gls{PF}) \cite{PF}. The algorithm identifies objects like electrons and photons from \gls{ECAL} entries or muons from hits in the muon chambers. By linking the information of the different detector systems, for example a track in the tracker system and matching \gls{ECAL} entries, all particles can be identified one after another.  From the combination of all reconstructed particle higher level objects like jets or \gls{MET} are reconstructed. \\
+Like discussed in section \ref{sec:section_2_2_4} and illustrated in figure \ref{fig:fig_2_5}, different particles leave specific signatures in the detector. This is used in the particle flow algorithm (\gls{PF}) \cite{PF}. The algorithm identifies objects like electrons and photons from \gls{ECAL} depositions or muons from hits in the muon chambers. By linking the information of the different sub-detectors, for example a track in the tracker system and matching \gls{ECAL} depositions, all particles can be identified one after another.  From the combination of all reconstructed particles higher level objects like jets or \gls{MET} are reconstructed. \\
 
-To ensure the best possible identification efficiency of the reconstructed particles, the \gls{CMS} collaboration provides multivariate analysis (\gls{MVA}) classifiers for the different particles. The classifiers are trained to identify the particle of interest from other particles, where information of detector systems are fed into the training, see reference \cite{ERECO} for the electron \gls{MVA} classifier. \\
+To ensure the best possible identification efficiency of the reconstructed particles, the \gls{CMS} collaboration provides multivariate analysis (\gls{MVA}) classifiers for the different particles. The classifiers are trained to identify the particle of interest, where information of detector systems are fed into the training, see reference \cite{ERECO} for the electron \gls{MVA} classifier. \\
 
 The $\tau$ leptons require more sophisticated methods for reconstruction, because of the short lifetime and the decay products of the $\tau$ lepton. The \gls{TAUH} are reconstructed with the hadron-plus-strips algorithm \cite{TAURECO}. This algorithm uses information of the tracks and calorimeter deposition of the hadrons originating from the decay of the $\tau$ lepton to a charged pion (1-prong), to a charged pion and a neutral pion (1-prong + $\pi^0$) and to three charged pions (3-prong). \\
 
-As for other objects the \gls{CMS} collaboration provides \gls{MVA} classifier for \gls{TAUH} \cite{TAURECO}. But due to reconstruction of the \gls{TAUH} from decay products, it is more prone that other objects (in general electrons/muons/jets) are misidentified as \gls{TAUH}. For this reason three different \gls{MVA} are provided to differentiate \gls{TAUH} and electrons/muons/jets. \\
+As for other objects the \gls{CMS} collaboration provides \gls{MVA} classifier for \gls{TAUH} \cite{TAURECO}. But due to reconstruction of the \gls{TAUH} from decay products, it happens that other objects like electrons, muons and jets are misidentified as \gls{TAUH}.  \\
 
-Besides $\tau$ leptons, also jets need a sophisticated treatment to be identified from a particle cascade in the calorimeter systems. Jets are reconstructed using the anti-$k_T$ algorithm \cite{ANTIKT}, which cluster all \gls{PF} candidates originating from the primary vertex within a cone of \gls{dR} = 0.4. In this analysis jets are required to fulfil \gls{pT} $> 30$ GeV and $|$\gls{eta}$|$ $ < 4.7$ to be identified as a jet. Due to the \gls{TTBAR} and its decay into b-quarks, the combined secondary vertex algorithm \cite{CSV} is used, which uses information about track-based lifetime information and the secondary vertex to provide a classifier to identify jets from b-quarks. 
+Besides $\tau$ leptons, also jets need a sophisticated treatment to be identified from a particle cascade in the calorimeter systems. Jets are reconstructed using the anti-$k_T$ algorithm \cite{ANTIKT}, which cluster all \gls{PF} candidates originating from the primary vertex within a cone of \gls{dR} = 0.4. In this analysis jets are required to fulfil \gls{pT} $> 30$ GeV and $|$\gls{eta}$|$ $ < 4.7$ to be identified as a jet. To suppress \gls{TTBAR}, its decay into b-quarks is used. The combined secondary vertex algorithm \cite{CSV} uses information about track-based lifetime information and the secondary vertex provides the identification of jets from b-quarks. 
 
 
 \subsection{Selection criteria}
 \label{sec:section_3_2_2}
 
-For the search of \gls{LFV} in Z boson decays, events of interest contain a pair of reconstructed electron/muon, electron/tau lepton or muon/tau lepton. On these reconstructed leptons qualitative requirements are set, in order to maximize the confidence in the quality of the reconstruction. \\
+For the search of \gls{LFV} in Z boson decays, events of interest must contain an electron and a muon, an electron and a $\tau$ lepton or a muon and a $\tau$ lepton. On these reconstructed leptons qualitative requirements are set, in order to maximize the confidence in the quality of the reconstruction. \\
 
-In general, because of the search for a neutral Z boson, only pair of leptons are selected with a different electric charge. Events with additional leptons, which pass loose \gls{MVA}/cut based identification criteria, are rejected to have no overlap between the different final states.  \\
+In general, because of the search for a neutral Z boson, only leptons are selected with a different electric charge. Events with additional leptons, which pass loose \gls{MVA}/cut based identification criteria, are rejected to have no overlap between the different final states.  \\
 
-The first final state dependent requirement is the trigger decision of the \gls{HLT}, which is discussed in section \ref{sec:section_2_2_3}. There is not only one trigger decision, but many trigger decisions are made on the objects of interest. The decision of the trigger is based on the \gls{pT} and \gls{eta} of the particles, which are online reconstructed during the trigger decision. In the analysis a cut on the \gls{pT} 1 GeV above \gls{pT} of the trigger decision is made to cut out resolution effects. 
+The first final state dependent requirement is the trigger decision of the \gls{HLT}, which is discussed in section \ref{sec:section_2_2_3}. Several different trigger decisions are used to get the particles of interest. The decision of the trigger is based on the \gls{pT} and \gls{eta} of the particles, which are online reconstructed. In the analysis a cut on the \gls{pT} 1 GeV above \gls{pT} of the trigger decision is made to cut out resolution effects. 
 
 \begin{description}
 	\item [$e\mu$:] In this final state two cross triggers are used, which selects events with one electron and one muon. The first trigger selects an electron with \gls{pT} $> 23$ GeV and $|$\gls{eta}$|$ $< 2.5$ and a muon with \gls{pT} $> 8$ GeV and $|$\gls{eta}$|$ $< 2.4$ and the second trigger requires an electron with \gls{pT} $> 12$ GeV and $|$\gls{eta}$|$ $< 2.5$ and a muon with \gls{pT} $> 23$ GeV and $|$\gls{eta}$|$ $< 2.4$. 
@@ -333,14 +332,14 @@ The first final state dependent requirement is the trigger decision of the \gls{
 	\item [$\mu\tau$:] In this final state a single trigger for selecting events with a muon and a cross trigger for selecting a pair of muon and \gls{TAUH}. The cross trigger requires a muon with \gls{pT} $> 19$ GeV and $|$\gls{eta}$|$ $< 2.1$ and a \gls{TAUH} with \gls{pT} $> 20$ GeV and $|$\gls{eta}$|$ $< 2.5$ and the single trigger requires muons with \gls{pT} $> 22$ GeV and $|$\gls{eta}$|$ $< 2.1$.
 \end{description}
 
-The second requirement is the isolation of the leptons. The isolation quantifies the energy deposition around a reconstructed object in a cone defined by a specific value of \gls{dR}. The definition of isolation is given by
+The second requirement is the isolation of the leptons. The isolation quantifies the energy deposition around a reconstructed lepton in a cone defined by a specific value of \gls{dR}. The definition of isolation is given by
 
 \begin{equation}
 	\label{eq:eq_3_1}
 	I^{\ell} = \frac{\sum_{\text{charged}} p_{T} + \text{max}(0, \sum_{\text{neutral}} p_{T} - \frac{1}{2}\sum_{\text{charged, PU}} p_{T})}{p_T^{\ell}}  
 \end{equation} 
 
-with $\sum_{\text{charged}}$ \gls{pT} as sum of the scalar transverse momenta of all charged particles originating from the primary vertex, $\sum_{\text{neutral}}$ \gls{pT} as sum of the scalar transverse momenta of all neutral particles and $\sum_{\text{charged, PU}}$ \gls{pT} as sum of the scalar transverse momenta of all charged particles from secondary vertices in a cone of \gls{dR} = 0.4. In this analysis tight isolated lepton are required, which means for each final state: 
+with $\sum_{\text{charged}}$ \gls{pT} as sum of the transverse momenta of all charged particles originating from the primary vertex, $\sum_{\text{neutral}}$ \gls{pT} as sum of the transverse momenta of all neutral particles and $\sum_{\text{charged, PU}}$ \gls{pT} as sum of the transverse momenta of all charged particles from secondary vertices in a cone of \gls{dR} = 0.4. In this analysis tight isolated lepton are required, which means for each final state: 
 
 \begin{description}
 	\item [$e\mu$:] For the electron an isolation of $I^{e} \leq  0.15$ and for the muon $I^{\mu} \leq  0.2$ are required. 
@@ -349,7 +348,7 @@ with $\sum_{\text{charged}}$ \gls{pT} as sum of the scalar transverse momenta of
 \end{description}
 
 
-The third requirement is based on the identification of the particle. To ensure that the object of interest is correctly identified, an offline criteria based on the detectors entries and particles properties are either used to set cuts on this or to train a \gls{MVA} classifier, like mentioned in section \ref{sec:section_3_2_1}. The \gls{CMS} collaboration provides recommendations for each particle, where different so-called working points for the selections are defined. These range from very loose to very tight, where a tighter working indicates a more trustworthy selection, but of course also lead to less events, which are selected. Which working point gives the best balance depends on the analysis, the following list shows the choice for this analysis. 
+The third requirement is based on the identification of the final state leptons. To ensure that the object of interest is correctly identified, offline criteria based on the detectors response and particles properties are either used to define cuts on this or to train a \gls{MVA} classifier, like mentioned in section \ref{sec:section_3_2_1}. The \gls{CMS} collaboration provides recommendations for each particle, where different so-called working points for the selections are defined. These range from very loose to very tight, where a tighter working indicates a more trustworthy selection, but of course also lead to less events, which are selected. Which working point gives the best balance depends on the analysis, the following list shows the choice for this analysis. 
 
 \begin{description}
 	\item [$e\mu$:] The electron has to pass the tight \gls{MVA} identification criteria, while the muon has to pass the medium cut based identification criteria. 
